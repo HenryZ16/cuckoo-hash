@@ -1,0 +1,4 @@
+# Configuration file for Cuckoo Hashing
+num_hash_func   2        # The number of hash functions used in Cuckoo Hash.
+size_hash_table 32 MB    # The size of hash table. The unit can be 'KB', 'MB', 'GB'.
+input_file      stdin    # The input file used to benchmark. If <filename> is stdin, then receive commands from console.
