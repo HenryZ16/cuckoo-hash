@@ -21,14 +21,15 @@ class Config {
   size_t num_hash_func;
   size_t size_hash_table;
   std::string input_file;
+  bool is_binary;
 
 public:
   // Constructors
   Config() = delete;
   Config(const size_t num_hash_func, const size_t size_hash_table,
-         const std::string &input_file)
+         const std::string &input_file, const bool is_binary = false)
       : num_hash_func(num_hash_func), size_hash_table(size_hash_table),
-        input_file(input_file) {}
+        input_file(input_file), is_binary(is_binary) {}
   explicit Config(const std::string &filename);
 
   // Default destructor, copy constructor, and copy assignment operator
@@ -36,5 +37,6 @@ public:
   size_t get_num_hash_func() const { return num_hash_func; }
   size_t get_size_hash_table() const { return size_hash_table; }
   std::string get_input_file() const { return input_file; }
+  bool get_is_binary() const { return is_binary; }
 };
 } // namespace cuckooHash

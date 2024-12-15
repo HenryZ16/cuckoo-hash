@@ -24,12 +24,33 @@ check_language(CUDA)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wall -Wextra")
 set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -O2 --use_fast_math")
 
+# Set macros
+if(BENCHMARK)
+    add_definitions(-DBENCHMARK)
+endif()
+if(DEBUG)
+    add_definitions(-DDEBUG)
+endif()
+
 # Set binaries - main
 set(SOURCE
     src/main.cpp
     src/config.cpp
     src/input.cpp)
 add_executable(cuckoo_hash ${SOURCE})
+
+#Set binaries - baseline
+set(SOURCE_BASELINE
+    src/baseline.cpp
+    src/config.cpp
+    src/input.cpp
+    src/cuckooHashDefault.cpp)
+add_executable(baseline ${SOURCE_BASELINE})
+
+# Set binaries - data_generator
+set(SOURCE_DATA_GENERATOR
+    src/dataGenerator.cpp)
+add_executable(data_generator ${SOURCE_DATA_GENERATOR})
 
 if(ENABLE_TESTS)
     # Set binaries - test_config

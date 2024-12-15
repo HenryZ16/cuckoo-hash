@@ -1,4 +1,5 @@
 #include "config.h"
+#include "utils.h"
 #include <fstream>
 #include <string>
 
@@ -12,6 +13,9 @@
  *   # The input file used to benchmark. If <filename> is stdin, then receive
  * commands from console.
  *   input_file      <string>
+ *
+ *   # mark if the input file is binary. can be `0` or `1`
+ *   is_binary       <int>
  */
 
 namespace cuckooHash {
@@ -22,6 +26,7 @@ Config::Config(const std::string &filename)
     throw std::runtime_error("Cannot open file " + filename);
   }
 
+  println("Reading config file: {}", filename);
   std::string line;
   while (std::getline(file, line)) {
     if (line.empty() || line[0] == '#') {
@@ -44,26 +49,34 @@ Config::Config(const std::string &filename)
     value.erase(value.find_last_not_of(" \n\r\t") + 1);
 
     if (key == "num_hash_func") {
+      println("num_hash_func: {}", value);
       num_hash_func = std::stoul(value);
     } else if (key == "size_hash_table") {
       pos = value.find(' ');
+      auto size = 0;
       if (pos != std::string::npos) {
         std::string unit = value.substr(pos + 1);
         value = value.substr(0, pos);
         if (unit == "KB") {
-          size_hash_table = std::stoul(value) * 1024;
+          size = std::stoul(value) * 1024;
         } else if (unit == "MB") {
-          size_hash_table = std::stoul(value) * 1024 * 1024;
+          size = std::stoul(value) * 1024 * 1024;
         } else if (unit == "GB") {
-          size_hash_table = std::stoul(value) * 1024 * 1024 * 1024;
+          size = std::stoul(value) * 1024 * 1024 * 1024;
         } else {
           throw std::runtime_error("Invalid unit: " + unit);
         }
       } else {
-        size_hash_table = std::stoul(value);
+        size = std::stoul(value);
       }
+      println("size_hash_table: {}", size);
+      size_hash_table = size;
     } else if (key == "input_file") {
+      println("input_file: {}", value);
       input_file = value;
+    } else if (key == "is_binary") {
+      println("is_binary: {}", value);
+      is_binary = std::stoi(value);
     } else {
       throw std::runtime_error("Invalid config key: " + key);
     }

@@ -9,6 +9,8 @@ rm -rf $BUILD_DIR
 mkdir $BUILD_DIR
 cd $BUILD_DIR
 cmake -DCMAKE_CXX_COMPILER=${GCC_PATH} \
+      -DDEBUG=false \
+      -DBENCHMARK=true \
       -S ..
 mv compile_commands.json ..
 make -j ${N_PROC}
