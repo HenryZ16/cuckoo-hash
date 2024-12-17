@@ -39,13 +39,20 @@ set(SOURCE
     src/input.cpp)
 add_executable(cuckoo_hash ${SOURCE})
 
-#Set binaries - baseline
+# Set binaries - baseline
 set(SOURCE_BASELINE
     src/baseline.cpp
     src/config.cpp
-    src/input.cpp
-    src/cuckooHashDefault.cpp)
+    src/input.cpp)
 add_executable(baseline ${SOURCE_BASELINE})
+
+# Set binaries - cuckoo_hash_lib
+set(SOURCE_CUCKOO_HASH_LIB
+    src/cuckooHashDefault.cpp
+    src/cuckooHashCUDA.cu
+    src/config.cpp
+    src/input.cpp)
+add_library(cuckoo_hash_lib ${SOURCE_CUCKOO_HASH_LIB})
 
 # Set binaries - data_generator
 set(SOURCE_DATA_GENERATOR
@@ -68,3 +75,8 @@ endif()
 
 # Set include path
 include_directories(${PROJECT_SOURCE_DIR}/include)
+target_include_directories(cuckoo_hash_lib PUBLIC ${PROJECT_SOURCE_DIR}/include)
+
+# Set link libraries
+target_link_libraries(cuckoo_hash cuckoo_hash_lib)
+target_link_libraries(baseline cuckoo_hash_lib)

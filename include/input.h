@@ -2,7 +2,6 @@
 
 #include "config.h"
 #include <cstdint>
-#include <format>
 #include <fstream>
 #include <iostream>
 #include <queue>

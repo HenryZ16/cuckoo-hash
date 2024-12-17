@@ -41,7 +41,7 @@ hashTablePos CuckooHashDefault::lookup(uint32_t key) {
     hash_values[i] = hash(key, i);
   }
 
-  hashTablePos success = {0, 0};
+  hashTablePos success = {UINT_MAX, UINT_MAX};
   for (size_t i = 0; i < n_hash_func; ++i) {
     if (hash_table[hash_values[i]] == key) {
       success = {i, hash_values[i]};
@@ -52,9 +52,17 @@ hashTablePos CuckooHashDefault::lookup(uint32_t key) {
   return success;
 }
 
+std::vector<hashTablePos> CuckooHashDefault::lookup(Instruction inst) {
+  std::vector<hashTablePos> results;
+  for (size_t i = 0; i < inst.second.size(); ++i) {
+    results.push_back(lookup(inst.second[i]));
+  }
+  return results;
+}
+
 void CuckooHashDefault::delete_key(uint32_t key) {
   hashTablePos pos = lookup(key);
-  if (pos == std::make_pair(0u, 0u)) {
+  if (pos == std::make_pair(UINT_MAX, UINT_MAX)) {
     return;
   }
 
@@ -63,7 +71,7 @@ void CuckooHashDefault::delete_key(uint32_t key) {
 
 void CuckooHashDefault::insert(uint32_t key) {
   hashTablePos pos = lookup(key);
-  if (key == 0 || pos != std::make_pair(0u, 0u)) {
+  if (key == 0 || pos != std::make_pair(UINT_MAX, UINT_MAX)) {
     return;
   }
 

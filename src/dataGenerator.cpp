@@ -10,6 +10,7 @@
 int main(int argc, char **argv) {
   if (argc < 4) {
     println("Usage: {} <output_file> <instruction> <cnt>", argv[0]);
+    return -1;
   }
   std::ofstream output_file(argv[1], std::ios::binary);
   std::string instruction = argv[2];
