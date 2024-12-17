@@ -132,7 +132,6 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               uint32_t *res_pos_hash_array,
                               bool *exceed_max_eviction) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
-  printf("Insert_global called from thread %d\n", (int)i);
 
   *exceed_max_eviction = false;
   // lookup
@@ -152,9 +151,6 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
   size_t array_key_end = (i + 1) * thread_lookup_size;
   array_key_end = array_key_end > num_array_key ? num_array_key : array_key_end;
   for (size_t k = array_key_start; k < array_key_end; ++k) {
-    if (k % 10000 == 0) {
-      printf("Inserting %zu\n", k);
-    }
     if (res_pos_hash_func[k] != UINT_MAX) {
       continue;
     }

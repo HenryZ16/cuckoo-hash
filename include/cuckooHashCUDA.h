@@ -21,7 +21,7 @@
 #include "cuckooHash.h"
 
 #define BLOCK_SIZE 32
-#define GRID_SIZE 1
+#define GRID_SIZE 1024
 
 namespace cuckooHash {
 static const uint32_t SM_2080Ti = 68;
