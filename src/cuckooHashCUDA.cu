@@ -151,7 +151,7 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
   size_t array_key_end = (i + 1) * thread_lookup_size;
   array_key_end = array_key_end > num_array_key ? num_array_key : array_key_end;
   for (size_t k = array_key_start; k < array_key_end; ++k) {
-    if (res_pos_hash_func[k] != UINT_MAX) {
+    if (res_pos_hash_func[k] != UINT_MAX || array_key[k] == 0) {
       continue;
     }
     uint32_t hash_value;
