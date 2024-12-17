@@ -254,14 +254,6 @@ void CuckooHashCUDA::rehash() {
   uint32_t max_eviction = get_max_eviction();
 
   while (1) {
-    int cnt = 0;
-    for(size_t i = 0; i < s_hash_table; ++i){
-      if(ptr_cuda_array_key[i] != 0){
-        cnt++;
-      }
-    }
-    std::cerr << "Need to rehash " << cnt << " items\n";
-
     insert_global<<<num_blocks, num_threads>>>(
         ptr_hash_table, size_hash_table, num_hash_func, array_coef_a,
         array_coef_b, max_eviction, ptr_cuda_array_key, s_hash_table,
@@ -274,10 +266,8 @@ void CuckooHashCUDA::rehash() {
     }
 
     if (*exceed_max_eviction) {
-      std::cout << "Exceed max eviction from rehash()" << std::endl;
       rehash();
     } else {
-      std::cout << "Rehash succeeded" << std::endl;
       break;
     }
   }
