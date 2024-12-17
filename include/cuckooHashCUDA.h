@@ -20,6 +20,9 @@
 #include "config.h"
 #include "cuckooHash.h"
 
+#define BLOCK_SIZE 32
+#define GRID_SIZE 1
+
 namespace cuckooHash {
 static const uint32_t SM_2080Ti = 68;
 static const uint32_t SM_V100 = 80;
@@ -59,8 +62,8 @@ public:
       : CuckooHash(num_hash_func, size_hash_table),
         hash_func_coef_a(nullptr, &cudaMemDeconstructor),
         hash_func_coef_b(nullptr, &cudaMemDeconstructor),
-        hash_table(nullptr, &cudaMemDeconstructor), block_size(256),
-        grid_size(256) {
+        hash_table(nullptr, &cudaMemDeconstructor), block_size(BLOCK_SIZE),
+        grid_size(GRID_SIZE) {
     uint32_t *ptr_cuda_hash_table = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_a = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_b = nullptr;
@@ -78,8 +81,8 @@ public:
       : CuckooHash(config.get_num_hash_func(), config.get_size_hash_table()),
         hash_func_coef_a(nullptr, &cudaMemDeconstructor),
         hash_func_coef_b(nullptr, &cudaMemDeconstructor),
-        hash_table(nullptr, &cudaMemDeconstructor), block_size(256),
-        grid_size(256) {
+        hash_table(nullptr, &cudaMemDeconstructor), block_size(BLOCK_SIZE),
+        grid_size(GRID_SIZE) {
     size_t size_hash_table = get_size_hash_table();
     size_t num_hash_func = get_num_hash_func();
     uint32_t *ptr_cuda_hash_table = nullptr;

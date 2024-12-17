@@ -14,7 +14,7 @@ endif()
 
 # CUDA configurations
 include(CheckLanguage)
-set(CMAKE_CUDA_ARCHITECTURES native)
+set(CMAKE_CUDA_ARCHITECTURES 70)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 set(CMAKE_CUDA_STANDARD 11)
