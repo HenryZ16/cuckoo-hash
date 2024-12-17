@@ -163,8 +163,7 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                                array_coef_b[m], h_array_size);
       // try to insert
       // if failed, exchange the key with the existing key
-      atomicExch(&ptr_hash_table[hash_value], array_key[k]);
-      if (array_key[k] == 0) {
+      if (atomicExch(&ptr_hash_table[hash_value], array_key[k]) == 0) {
         break;
       }
     }
@@ -219,6 +218,7 @@ void CuckooHashCUDA::rehash() {
 
   uint32_t *ptr_cuda_new_hash_table = nullptr;
   cudaMallocManaged(&ptr_cuda_new_hash_table, s_hash_table * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_new_hash_table, 0, s_hash_table * sizeof(uint32_t));
   auto new_hash_table = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_new_hash_table, &cudaMemDeconstructor);
   std::swap(hash_table, new_hash_table);
@@ -232,8 +232,10 @@ void CuckooHashCUDA::rehash() {
   bool *ptr_cuda_exceed_max_eviction = nullptr;
   cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
                     s_hash_table * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_func, 0, s_hash_table * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
                     s_hash_table * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_array, 0, s_hash_table * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(bool));
   auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
@@ -279,6 +281,7 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   size_t num_array_key = inst.second.size();
   uint32_t *ptr_cuda_array_key = nullptr;
   cudaMallocManaged(&ptr_cuda_array_key, num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_array_key, 0, num_array_key * sizeof(uint32_t));
   auto array_key = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_array_key, cudaMemDeconstructor);
 #pragma omp parallel for
@@ -292,8 +295,10 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   uint32_t *ptr_cuda_res_pos_hash_array = nullptr;
   cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
                     num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_func, 0, num_array_key * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
                     num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_array, 0, num_array_key * sizeof(uint32_t));
   auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
   auto res_pos_hash_array = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
@@ -338,6 +343,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
   size_t num_array_key = inst.second.size();
   uint32_t *ptr_cuda_array_key = nullptr;
   cudaMallocManaged(&ptr_cuda_array_key, num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_array_key, 0, num_array_key * sizeof(uint32_t));
   auto array_key = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_array_key, &cudaMemDeconstructor);
 #pragma omp parallel for
@@ -352,8 +358,10 @@ void CuckooHashCUDA::insert(Instruction inst) {
   bool *ptr_cuda_exceed_max_eviction = nullptr;
   cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
                     num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_func, 0, num_array_key * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
                     num_array_key * sizeof(uint32_t));
+  cudaMemset(ptr_cuda_res_pos_hash_array, 0, num_array_key * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(bool));
   auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
