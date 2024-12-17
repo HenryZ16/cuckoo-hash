@@ -21,7 +21,7 @@
 #include "cuckooHash.h"
 
 #define BLOCK_SIZE 32
-#define GRID_SIZE 1024
+#define GRID_SIZE 2048
 
 namespace cuckooHash {
 static const uint32_t SM_2080Ti = 68;
@@ -38,7 +38,7 @@ class CuckooHashCUDA : public CuckooHash {
     std::mt19937 gen(rd());
     size_t num_hash_func = get_num_hash_func();
     size_t size_hash_table = get_size_hash_table();
-    size_t rd_upper = size_hash_table >> 4;
+    size_t rd_upper = size_hash_table >> 2;
     rd_upper = rd_upper < 64 ? 64 : rd_upper;
     std::uniform_int_distribution<> dis(1, rd_upper);
     for (size_t i = 0; i < num_hash_func; i++) {
@@ -67,7 +67,7 @@ public:
     uint32_t *ptr_cuda_hash_table = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_a = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_b = nullptr;
-    cudaMalloc(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
+    cudaMallocManaged(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
     cudaMallocManaged(&ptr_cuda_hash_func_coef_a,
                       num_hash_func * sizeof(uint32_t));
     cudaMallocManaged(&ptr_cuda_hash_func_coef_b,
@@ -88,7 +88,7 @@ public:
     uint32_t *ptr_cuda_hash_table = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_a = nullptr;
     uint32_t *ptr_cuda_hash_func_coef_b = nullptr;
-    cudaMalloc(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
+    cudaMallocManaged(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
     cudaMallocManaged(&ptr_cuda_hash_func_coef_a,
                       num_hash_func * sizeof(uint32_t));
     cudaMallocManaged(&ptr_cuda_hash_func_coef_b,
