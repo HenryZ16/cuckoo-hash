@@ -155,26 +155,23 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
       continue;
     }
     uint32_t hash_value;
-    for (size_t j = 0; j < max_eviction; j += num_hash_func) {
-      for (size_t m = 0; m < num_hash_func; m++) {
-        // calc hash value
-        hash_value = hash_device(m, array_key[k], array_coef_a[m],
-                                 array_coef_b[m], h_array_size);
-        // try to insert
-        // if failed, exchange the key with the existing key
-        atomicExch(&ptr_hash_table[hash_value], array_key[k]);
-        if (array_key[k] == 0) {
-          goto insert_key_end;
-        }
+    size_t j = 0;
+    for (; j < max_eviction; j += num_hash_func) {
+      size_t m = j % num_hash_func;
+      // calc hash value
+      hash_value = hash_device(m, array_key[k], array_coef_a[m],
+                               array_coef_b[m], h_array_size);
+      // try to insert
+      // if failed, exchange the key with the existing key
+      atomicExch(&ptr_hash_table[hash_value], array_key[k]);
+      if (array_key[k] == 0) {
+        break;
       }
     }
     // if exceed the max eviction, set exceed_max_eviction to true
-    // then quit the loop
-    *exceed_max_eviction |= true;
-    return;
-
-  insert_key_end:
-    continue;
+    if (j >= max_eviction) {
+      *exceed_max_eviction |= true;
+    }
   }
 }
 
