@@ -258,14 +258,17 @@ void CuckooHashCUDA::rehash() {
         res_pos_hash_func.get(), res_pos_hash_array.get(),
         exceed_max_eviction.get());
     cudaDeviceSynchronize();
-    if (!(*exceed_max_eviction)) {
-      break;
-    }
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
       std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
     }
-    rehash();
+
+    if (*exceed_max_eviction) {
+      std::cout << "Exceed max eviction from rehash()" << std::endl;
+      rehash();
+    } else {
+      break;
+    }
   }
 }
 
@@ -388,14 +391,16 @@ void CuckooHashCUDA::insert(Instruction inst) {
         res_pos_hash_func.get(), res_pos_hash_array.get(),
         exceed_max_eviction.get());
     cudaDeviceSynchronize();
-    if (!(*exceed_max_eviction)) {
-      break;
-    }
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
       std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
     }
-    rehash();
+
+    if (*exceed_max_eviction) {
+      rehash();
+    } else {
+      break;
+    }
   }
 
 #ifdef BENCHMARK
