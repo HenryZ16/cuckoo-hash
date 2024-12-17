@@ -113,8 +113,8 @@ __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
   for (size_t k = array_key_start; k < array_key_end; ++k) {
     // for each array corresponding to a hash function
     for (size_t j = 0; j < num_hash_func; ++j) {
-      uint32_t pos = hash_device(i, array_key[k], array_coef_a[i],
-                                 array_coef_b[i], h_array_size);
+      uint32_t pos = hash_device(j, array_key[k], array_coef_a[j],
+                                 array_coef_b[j], h_array_size);
       if (ptr_hash_table[pos] == array_key[k]) {
         ptr_hash_table[pos] = 0;
       }
@@ -162,8 +162,8 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
     for (size_t j = 0; j < max_eviction; j += num_hash_func) {
       for (size_t m = 0; m < num_hash_func; m++) {
         // calc hash value
-        hash_value = hash_device(i, array_key[k], array_coef_a[i],
-                                 array_coef_b[i], h_array_size);
+        hash_value = hash_device(m, array_key[k], array_coef_a[m],
+                                 array_coef_b[m], h_array_size);
         // try to insert
         // if failed, exchange the key with the existing key
         atomicExch(&ptr_hash_table[hash_value], array_key[k]);
@@ -209,8 +209,8 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
     }
     // for each array corresponding to a hash function
     for (size_t j = 0; j < num_hash_func; ++j) {
-      uint32_t pos = hash_device(i, array_key[k], array_coef_a[i],
-                                 array_coef_b[i], h_array_size);
+      uint32_t pos = hash_device(j, array_key[k], array_coef_a[j],
+                                 array_coef_b[j], h_array_size);
       if (hash_table[pos] == array_key[k]) {
         res_pos_hash_func[k] = i;
         res_pos_hash_array[k] = pos;
