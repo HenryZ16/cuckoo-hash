@@ -132,8 +132,6 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               uint32_t *res_pos_hash_array,
                               bool *exceed_max_eviction) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
-
-  *exceed_max_eviction = false;
   // lookup
   lookup_device(ptr_hash_table, size_hash_table, array_key, num_array_key,
                 array_coef_a, array_coef_b, num_hash_func, res_pos_hash_func,
@@ -243,6 +241,7 @@ void CuckooHashCUDA::rehash() {
       ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
   auto exceed_max_eviction = std::unique_ptr<bool, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
+  *exceed_max_eviction = false;
 
   // get params from cuckooHashCUDA
   uint32_t *ptr_hash_table = hash_table.get();
@@ -369,6 +368,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
       ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
   auto exceed_max_eviction = std::unique_ptr<bool, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
+  *exceed_max_eviction = false;
 
   // get params from cuckooHashCUDA
   uint32_t *ptr_hash_table = hash_table.get();
