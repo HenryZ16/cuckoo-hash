@@ -235,7 +235,6 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
 }
 
 void CuckooHashCUDA::rehash() {
-  std::cerr << "Rehashing..." << std::endl;
   auto s_hash_table = get_size_hash_table();
 
   uint32_t *ptr_cuda_new_hash_table = nullptr;
@@ -245,12 +244,14 @@ void CuckooHashCUDA::rehash() {
   std::swap(hash_table, new_hash_table);
 
   size_t table_element_cnt = 0;
+#pragma omp parallel for
   for (size_t i = 0; i < s_hash_table; ++i) {
     if (new_hash_table[i] != 0) {
       new_hash_table[table_element_cnt] = new_hash_table[i];
       table_element_cnt++;
     }
   }
+  std::cout << "Rehashing " << table_element_cnt << " elements" << std::endl;
 
   // insert
   size_t num_threads = block_size;
@@ -260,7 +261,8 @@ void CuckooHashCUDA::rehash() {
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
 
-  while (1) {
+  do {
+    std::cout << "Rehashing... " << std::endl;
     // generate_hash_func_coef();
     cudaMemset(hash_table.get(), 0, s_hash_table * sizeof(uint32_t));
     *exceed_max_eviction = 0;
@@ -275,13 +277,7 @@ void CuckooHashCUDA::rehash() {
     if (err != cudaSuccess) {
       std::cerr << "Error: " << cudaGetErrorString(err) << std::endl;
     }
-
-    if (*exceed_max_eviction) {
-      std::cerr << "Rehashing..." << std::endl;
-    } else {
-      break;
-    }
-  }
+  } while (*exceed_max_eviction);
 }
 
 hashTablePos CuckooHashCUDA::lookup(uint32_t) {
@@ -390,7 +386,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
 
   while (1) {
-    *exceed_max_eviction = false;
+    *exceed_max_eviction = 0;
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), max_eviction, array_key.get(), num_array_key,
@@ -404,9 +400,12 @@ void CuckooHashCUDA::insert(Instruction inst) {
     if (*exceed_max_eviction) {
       int cnt = 0;
       for (size_t i = 0; i < num_array_key; ++i) {
-        if (array_key[i] != 0)
+        if (array_key[i] != 0) {
+          array_key[cnt] = array_key[i];
           cnt++;
+        }
       }
+      num_array_key = cnt;
       std::cerr << cnt << " keys left to insert\n";
 
       rehash();
