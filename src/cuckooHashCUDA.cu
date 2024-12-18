@@ -270,12 +270,6 @@ void CuckooHashCUDA::rehash() {
 
     if (*exceed_max_eviction) {
       std::cerr << "Rehashing..." << std::endl;
-      int cnt = 0;
-      for (size_t i = 0; i < get_size_hash_table(); ++i) {
-        if (new_hash_table[i] != 0)
-          cnt++;
-      }
-      std::cerr << cnt << " keys left to insert\n";
     } else {
       break;
     }
