@@ -244,7 +244,6 @@ void CuckooHashCUDA::rehash() {
   std::swap(hash_table, new_hash_table);
 
   size_t table_element_cnt = 0;
-#pragma omp parallel for
   for (size_t i = 0; i < s_hash_table; ++i) {
     if (new_hash_table[i] != 0) {
       new_hash_table[table_element_cnt] = new_hash_table[i];
