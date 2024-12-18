@@ -21,8 +21,8 @@ set(CMAKE_CUDA_STANDARD 11)
 check_language(CUDA)
 
 # Set compile options
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wall -Wextra")
-set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -O2 --use_fast_math")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp -O2 -Wall -Wextra")
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} -fopenmp -O2 --use_fast_math")
 
 # Set macros
 if(BENCHMARK)
@@ -51,7 +51,8 @@ set(SOURCE_CUCKOO_HASH_LIB
     src/cuckooHashDefault.cpp
     src/cuckooHashCUDA.cu
     src/config.cpp
-    src/input.cpp)
+    src/input.cpp
+    src/primeFilter.cpp)
 add_library(cuckoo_hash_lib ${SOURCE_CUCKOO_HASH_LIB})
 
 # Set binaries - data_generator
