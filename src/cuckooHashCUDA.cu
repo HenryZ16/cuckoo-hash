@@ -59,7 +59,7 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
 // hash
 __device__ uint32_t hash_device(size_t i, uint64_t key, uint64_t coef_a,
                                 uint64_t coef_b, uint64_t h_array_size) {
-  uint64_t value = (coef_a * key + coef_b) % INT_MAX;
+  uint64_t value = (coef_a * key + coef_b) % PRIME;
   uint64_t pos = value % h_array_size;
   uint32_t ret = static_cast<uint32_t>(pos + i * h_array_size);
   return ret;
@@ -131,7 +131,7 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               uint32_t *array_key, uint32_t num_array_key,
                               uint32_t *res_pos_hash_func,
                               uint32_t *res_pos_hash_array,
-                              uint32_t* exceed_max_eviction) {
+                              uint32_t *exceed_max_eviction) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
   // lookup
   lookup_device(ptr_hash_table, size_hash_table, array_key, num_array_key,
@@ -245,20 +245,12 @@ void CuckooHashCUDA::rehash() {
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
   *exceed_max_eviction = 0;
 
-  // get params from cuckooHashCUDA
-  uint32_t *ptr_hash_table = hash_table.get();
-  size_t size_hash_table = get_size_hash_table();
-  size_t num_hash_func = get_num_hash_func();
-  uint32_t *array_coef_a = hash_func_coef_a.get();
-  uint32_t *array_coef_b = hash_func_coef_b.get();
-  uint32_t max_eviction = get_max_eviction();
-
   while (1) {
     insert_global<<<num_blocks, num_threads>>>(
-        ptr_hash_table, size_hash_table, num_hash_func, array_coef_a,
-        array_coef_b, max_eviction, ptr_cuda_array_key, s_hash_table,
-        res_pos_hash_func.get(), res_pos_hash_array.get(),
-        exceed_max_eviction.get());
+        hash_table.get(), get_size_hash_table(), get_num_hash_func(),
+        hash_func_coef_a.get(), hash_func_coef_b.get(), get_max_eviction(),
+        new_hash_table.get(), get_size_hash_table(), res_pos_hash_func.get(),
+        res_pos_hash_array.get(), exceed_max_eviction.get());
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
@@ -281,6 +273,11 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   if (inst.first != "lookup") {
     return {};
   }
+
+#ifdef BENCHMARK
+  uint64_t t_start = std::clock();
+#endif
+
   size_t num_array_key = inst.second.size();
   uint32_t *ptr_cuda_array_key = nullptr;
   cudaMallocManaged(&ptr_cuda_array_key, num_array_key * sizeof(uint32_t));
@@ -318,6 +315,13 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   for (size_t i = 0; i < num_array_key; ++i) {
     results.push_back({res_pos_hash_func[i], res_pos_hash_array[i]});
   }
+
+#ifdef BENCHMARK
+  uint64_t t_end = std::clock();
+  std::cout << "Time elapsed in looking up " << inst.second.size()
+            << " items: " << (double)(t_end - t_start) / CLOCKS_PER_SEC << "\n";
+#endif
+
   return results;
 }
 
@@ -338,6 +342,11 @@ void CuckooHashCUDA::insert(Instruction inst) {
   if (inst.first != "insert") {
     return;
   }
+
+#ifdef BENCHMARK
+  uint64_t t_start = std::clock();
+#endif
+
   size_t max_eviction = 4 * std::log2(inst.second.size());
   max_eviction = max_eviction < 4 ? 4 : max_eviction;
   set_max_eviction(max_eviction);
@@ -374,23 +383,22 @@ void CuckooHashCUDA::insert(Instruction inst) {
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
   *exceed_max_eviction = false;
 
-  // get params from cuckooHashCUDA
-  size_t size_hash_table = get_size_hash_table();
-  size_t num_hash_func = get_num_hash_func();
-  uint32_t *array_coef_a = hash_func_coef_a.get();
-  uint32_t *array_coef_b = hash_func_coef_b.get();
-
-#ifdef BENCHMARK
-  uint64_t t_start = std::clock();
-#endif
-
   while (1) {
-    uint32_t *ptr_hash_table = hash_table.get();
+    std::cerr << "use coeff: " << hash_func_coef_a[0] << ", "
+              << hash_func_coef_a[1] << ", " << hash_func_coef_b[0] << ", "
+              << hash_func_coef_b[1] << std::endl;
+    int cnt = 0;
+    for (size_t i = 0; i < num_array_key; ++i) {
+      if (array_key[i] != 0)
+        cnt++;
+    }
+    std::cerr << cnt << " keys left to insert\n";
+
     insert_global<<<num_blocks, num_threads>>>(
-        ptr_hash_table, size_hash_table, num_hash_func, array_coef_a,
-        array_coef_b, max_eviction, array_key.get(), num_array_key,
-        res_pos_hash_func.get(), res_pos_hash_array.get(),
-        exceed_max_eviction.get());
+        hash_table.get(), get_size_hash_table(), get_num_hash_func(),
+        hash_func_coef_a.get(), hash_func_coef_b.get(), max_eviction,
+        array_key.get(), num_array_key, res_pos_hash_func.get(),
+        res_pos_hash_array.get(), exceed_max_eviction.get());
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
@@ -407,7 +415,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
 #ifdef BENCHMARK
   uint64_t t_end = std::clock();
   std::cout << "Time elapsed in inserting " << inst.second.size()
-            << " items: " << t_end - t_start << "\n";
+            << " items: " << (double)(t_end - t_start) / CLOCKS_PER_SEC << "\n";
 #endif
 #ifdef DEBUG
   println("Final hash table:");

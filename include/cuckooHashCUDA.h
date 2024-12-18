@@ -22,6 +22,7 @@
 
 #define BLOCK_SIZE 32
 #define GRID_SIZE 2048
+#define PRIME INT_MAX
 
 namespace cuckooHash {
 static const uint32_t SM_2080Ti = 68;
