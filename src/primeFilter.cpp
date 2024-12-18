@@ -1,4 +1,5 @@
 #include <memory>
+#include <iostream>
 #include <omp.h>
 
 #include "primeFilter.h"
@@ -27,5 +28,6 @@ uint32_t prime_filter(uint32_t *array, uint32_t n) {
     }
   }
 
+  std::cout << "Generated " << cnt << " primes\n";
   return cnt;
 }
