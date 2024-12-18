@@ -389,10 +389,6 @@ void CuckooHashCUDA::insert(Instruction inst) {
 
   while (1) {
     *exceed_max_eviction = false;
-    std::cerr << "use coeff: " << hash_func_coef[0] << ", " << hash_func_coef[1]
-              << ", " << hash_func_coef[2] << ", " << hash_func_coef[3]
-              << std::endl;
-
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), max_eviction, array_key.get(), num_array_key,
