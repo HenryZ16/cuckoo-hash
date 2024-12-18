@@ -15,6 +15,12 @@ namespace cuckooHash {
  *   # The input file used to benchmark. If <filename> is stdin, then receive
  * commands from console.
  *   input_file      <string>
+ *
+ *   # mark if the input file is binary. can be `0` or `1`
+ *   is_binary       <int>
+ *
+ *   # The increment of the eviction chain.
+ *   eviction_chain_increment <size_t>
  */
 
 class Config {
@@ -22,14 +28,17 @@ class Config {
   size_t size_hash_table;
   std::string input_file;
   bool is_binary;
+  size_t eviction_chain_increment;
 
 public:
   // Constructors
   Config() = delete;
   Config(const size_t num_hash_func, const size_t size_hash_table,
-         const std::string &input_file, const bool is_binary = false)
+         const std::string &input_file, const bool is_binary = false,
+         const size_t eviction_chain_increment = 4)
       : num_hash_func(num_hash_func), size_hash_table(size_hash_table),
-        input_file(input_file), is_binary(is_binary) {}
+        input_file(input_file), is_binary(is_binary),
+        eviction_chain_increment(eviction_chain_increment) {}
   explicit Config(const std::string &filename);
 
   // Default destructor, copy constructor, and copy assignment operator
@@ -38,5 +47,8 @@ public:
   size_t get_size_hash_table() const { return size_hash_table; }
   std::string get_input_file() const { return input_file; }
   bool get_is_binary() const { return is_binary; }
+  size_t get_eviction_chain_increment() const {
+    return eviction_chain_increment;
+  }
 };
 } // namespace cuckooHash

@@ -16,6 +16,9 @@
  *
  *   # mark if the input file is binary. can be `0` or `1`
  *   is_binary       <int>
+ *
+ *   # The increment of the eviction chain.
+ *   eviction_chain_increment <size_t>
  */
 
 namespace cuckooHash {
@@ -77,6 +80,9 @@ Config::Config(const std::string &filename)
     } else if (key == "is_binary") {
       println("is_binary: {}", value);
       is_binary = std::stoi(value);
+    } else if (key == "eviction_chain_increment") {
+      println("eviction_chain_increment: {}", value);
+      eviction_chain_increment = std::stoul(value);
     } else {
       throw std::runtime_error("Invalid config key: " + key);
     }

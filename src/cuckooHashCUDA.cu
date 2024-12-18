@@ -259,7 +259,8 @@ void CuckooHashCUDA::rehash() {
 
   do {
     std::cout << "Rehashing... " << std::endl;
-    // generate_hash_func_coef();
+    set_max_eviction(get_max_eviction() +);
+    generate_hash_func_coef();
     cudaMemset(hash_table.get(), 0, s_hash_table * sizeof(uint32_t));
     *exceed_max_eviction = 0;
 
@@ -402,7 +403,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
         }
       }
       num_array_key = cnt;
-      std::cerr << cnt << " keys left to insert\n";
+      std::cout << cnt << " keys left to insert\n";
 
       rehash();
     } else {

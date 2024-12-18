@@ -54,16 +54,19 @@ class CuckooHashCUDA : public CuckooHash {
   uint64_t block_size;
   uint64_t grid_size;
   uint32_t prime_cnt;
+  size_t eviction_chain_increment;
 
 public:
   // Constructors
   CuckooHashCUDA() = delete;
-  CuckooHashCUDA(const size_t num_hash_func, const size_t size_hash_table)
+  CuckooHashCUDA(const size_t num_hash_func, const size_t size_hash_table,
+                 const size_t eviction_chain_increment = 4)
       : CuckooHash(num_hash_func, size_hash_table),
         hash_func_coef(nullptr, &cudaMemDeconstructor),
         hash_table(nullptr, &cudaMemDeconstructor),
         prime_list(new uint32_t[size_hash_table >> 2]), block_size(BLOCK_SIZE),
-        grid_size(GRID_SIZE), prime_cnt(0) {
+        grid_size(GRID_SIZE), prime_cnt(0),
+        eviction_chain_increment(eviction_chain_increment) {
     uint32_t *ptr_cuda_hash_table = nullptr;
     uint64_t *ptr_cuda_hash_func_coef = nullptr;
     cudaMallocManaged(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
@@ -79,7 +82,8 @@ public:
         hash_func_coef(nullptr, &cudaMemDeconstructor),
         hash_table(nullptr, &cudaMemDeconstructor),
         prime_list(new uint32_t[config.get_size_hash_table() >> 2]),
-        block_size(BLOCK_SIZE), grid_size(GRID_SIZE), prime_cnt(0) {
+        block_size(BLOCK_SIZE), grid_size(GRID_SIZE), prime_cnt(0),
+        eviction_chain_increment(config.get_eviction_chain_increment()) {
     size_t size_hash_table = get_size_hash_table();
     size_t num_hash_func = get_num_hash_func();
     uint32_t *ptr_cuda_hash_table = nullptr;
