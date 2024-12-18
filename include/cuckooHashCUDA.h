@@ -36,13 +36,10 @@ class CuckooHashCUDA : public CuckooHash {
     size_t num_hash_func = get_num_hash_func();
     size_t size_hash_table = get_size_hash_table();
     std::uniform_int_distribution<> dis(63, prime_cnt);
-    std::cout << "Generated hash function coefficients: ";
     for (size_t i = 0; i < num_hash_func * NUM_HASH_FUNC_COEF; i++) {
       hash_func_coef[i] =
           prime_list[dis(gen)] * prime_list[dis(gen)] + prime_list[dis(gen)];
-      std::cout << hash_func_coef[i] << ", ";
     }
-    std::cout << std::endl;
   }
 
   // protected:
