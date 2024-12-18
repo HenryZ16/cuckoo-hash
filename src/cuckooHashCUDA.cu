@@ -181,7 +181,7 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
       // try to insert
       // if failed, exchange the key with the existing key
       uint32_t old_value = atomicExch(&ptr_hash_table[hash_value], key);
-      if (old_value == 0) {
+      if (old_value == 0 || old_value == key) {
         if (if_replace_key) {
           array_key[k] = 0;
         }
