@@ -20,12 +20,12 @@ __global__ void lookup_global(uint32_t *ptr_hash_table, size_t size_hash_table,
 __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               size_t num_hash_func, uint64_t *array_coef,
                               uint32_t *array_key, uint32_t num_array_key);
-__global__ void
-insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
-              size_t num_hash_func, uint64_t *array_coef, uint32_t max_eviction,
-              uint32_t *array_key, uint32_t num_array_key,
-              uint32_t *res_pos_hash_func, uint32_t *res_pos_hash_array,
-              uint32_t *exceed_max_eviction, uint32_t if_replace_key);
+__global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
+                              size_t num_hash_func, uint64_t *array_coef,
+                              uint32_t max_eviction, uint32_t *array_key,
+                              uint32_t num_array_key,
+                              uint32_t *exceed_max_eviction,
+                              uint32_t if_replace_key);
 /**
  * @brief
  *
@@ -134,11 +134,12 @@ __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
 
 // insert
 // res_pos_hash_func, res_pos_hash_array are used for lookup
-__global__ void
-insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
-              size_t num_hash_func, uint64_t *array_coef, uint32_t max_eviction,
-              uint32_t *array_key, uint32_t num_array_key,
-              uint32_t *exceed_max_eviction, uint32_t if_replace_key) {
+__global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
+                              size_t num_hash_func, uint64_t *array_coef,
+                              uint32_t max_eviction, uint32_t *array_key,
+                              uint32_t num_array_key,
+                              uint32_t *exceed_max_eviction,
+                              uint32_t if_replace_key) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
 
   // insert the key in the range [i * thread_lookup_size, (i + 1) *
@@ -179,12 +180,6 @@ insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                                h_array_size);
       // try to insert
       // if failed, exchange the key with the existing key
-      if(ptr_hash_table[hash_value] == key){
-        if (if_replace_key) {
-          array_key[k] = 0;
-        }
-        break;
-      }
       uint32_t old_value = atomicExch(&ptr_hash_table[hash_value], key);
       if (old_value == 0) {
         if (if_replace_key) {
@@ -252,33 +247,20 @@ void CuckooHashCUDA::rehash() {
   // insert
   size_t num_threads = block_size;
   size_t num_blocks = grid_size;
-  uint32_t *ptr_cuda_res_pos_hash_func = nullptr;
-  uint32_t *ptr_cuda_res_pos_hash_array = nullptr;
   uint32_t *ptr_cuda_exceed_max_eviction = nullptr;
-  cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
-                    s_hash_table * sizeof(uint32_t));
-  cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
-                    s_hash_table * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(uint32_t));
-  auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
-      ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
-  auto res_pos_hash_array = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
-      ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
 
   while (1) {
     // generate_hash_func_coef();
     cudaMemset(hash_table.get(), 0, s_hash_table * sizeof(uint32_t));
-    cudaMemset(res_pos_hash_func.get(), 0, s_hash_table * sizeof(uint32_t));
-    cudaMemset(res_pos_hash_array.get(), 0, s_hash_table * sizeof(uint32_t));
     *exceed_max_eviction = 0;
 
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), s_hash_table, get_num_hash_func(),
         hash_func_coef.get(), get_max_eviction(), new_hash_table.get(),
-        s_hash_table, res_pos_hash_func.get(),
-        res_pos_hash_array.get(), exceed_max_eviction.get(), 0);
+        s_hash_table, exceed_max_eviction.get(), 0);
     cudaDeviceSynchronize();
 
     cudaError_t err = cudaGetLastError();
@@ -400,24 +382,12 @@ void CuckooHashCUDA::insert(Instruction inst) {
 
   size_t num_threads = block_size;
   size_t num_blocks = grid_size;
-  uint32_t *ptr_cuda_res_pos_hash_func = nullptr;
-  uint32_t *ptr_cuda_res_pos_hash_array = nullptr;
   uint32_t *ptr_cuda_exceed_max_eviction = nullptr;
-  cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
-                    num_array_key * sizeof(uint32_t));
-  cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
-                    num_array_key * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(uint32_t));
-  auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
-      ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
-  auto res_pos_hash_array = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
-      ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
 
   while (1) {
-    cudaMemset(ptr_cuda_res_pos_hash_func, 0, num_array_key * sizeof(uint32_t));
-    cudaMemset(ptr_cuda_res_pos_hash_array, 0, num_array_key * sizeof(uint32_t));
     *exceed_max_eviction = false;
     std::cerr << "use coeff: " << hash_func_coef[0] << ", " << hash_func_coef[1]
               << ", " << hash_func_coef[2] << ", " << hash_func_coef[3]
@@ -426,7 +396,6 @@ void CuckooHashCUDA::insert(Instruction inst) {
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), max_eviction, array_key.get(), num_array_key,
-        res_pos_hash_func.get(), res_pos_hash_array.get(),
         exceed_max_eviction.get(), 1);
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
