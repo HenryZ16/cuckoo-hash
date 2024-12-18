@@ -113,8 +113,7 @@ __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
   // thread_lookup_size)
   uint32_t h_array_size = size_hash_table / num_hash_func;
   size_t num_threads = blockDim.x * gridDim.x;
-  size_t thread_lookup_size = num_array_key / num_threads;
-  thread_lookup_size = thread_lookup_size == 0 ? 1 : thread_lookup_size;
+  size_t thread_lookup_size = num_array_key / num_threads + 1;
 
   // go over the array of keys assigned to thread `i`
   size_t array_key_start = i * thread_lookup_size;
@@ -146,8 +145,7 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
   // thread_lookup_size)
   uint32_t h_array_size = size_hash_table / num_hash_func;
   size_t num_threads = blockDim.x * gridDim.x;
-  size_t thread_lookup_size = num_array_key / num_threads;
-  thread_lookup_size = thread_lookup_size == 0 ? 1 : thread_lookup_size;
+  size_t thread_lookup_size = num_array_key / num_threads + 1;
 
   // go over the array of keys assigned to thread `i`
   size_t array_key_start = i * thread_lookup_size;
@@ -209,8 +207,7 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
   // thread_lookup_size)
   uint32_t h_array_size = size_hash_table / num_hash_func;
   size_t num_threads = blockDim.x * gridDim.x;
-  size_t thread_lookup_size = num_array_key / num_threads;
-  thread_lookup_size = thread_lookup_size == 0 ? 1 : thread_lookup_size;
+  size_t thread_lookup_size = num_array_key / num_threads + 1;
 
   // go over the array of keys assigned to thread `i`
   size_t array_key_start = i * thread_lookup_size;
