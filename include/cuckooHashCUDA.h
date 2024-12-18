@@ -35,9 +35,8 @@ class CuckooHashCUDA : public CuckooHash {
     size_t num_hash_func = get_num_hash_func();
     size_t size_hash_table = get_size_hash_table();
     std::uniform_int_distribution<> dis(511, prime_cnt);
-    for (size_t i = 0; i < num_hash_func * NUM_HASH_FUNC_COEF; i += 2) {
+    for (size_t i = 0; i < num_hash_func * NUM_HASH_FUNC_COEF; i++) {
       hash_func_coef[i] = prime_list[dis(gen)];
-      hash_func_coef[i + 1] = prime_list[dis(gen)];
     }
   }
 
@@ -58,7 +57,7 @@ public:
       : CuckooHash(num_hash_func, size_hash_table),
         hash_func_coef(nullptr, &cudaMemDeconstructor),
         hash_table(nullptr, &cudaMemDeconstructor),
-        prime_list(new uint32_t[size_hash_table >> 4]), block_size(BLOCK_SIZE),
+        prime_list(new uint32_t[size_hash_table >> 2]), block_size(BLOCK_SIZE),
         grid_size(GRID_SIZE), prime_cnt(0) {
     uint32_t *ptr_cuda_hash_table = nullptr;
     uint32_t *ptr_cuda_hash_func_coef = nullptr;
@@ -73,9 +72,9 @@ public:
   CuckooHashCUDA(const Config &config)
       : CuckooHash(config.get_num_hash_func(), config.get_size_hash_table()),
         hash_func_coef(nullptr, &cudaMemDeconstructor),
-        hash_table(nullptr, &cudaMemDeconstructor), block_size(BLOCK_SIZE),
-        prime_list(new uint32_t[config.get_size_hash_table() >> 4]),
-        grid_size(GRID_SIZE), prime_cnt(0) {
+        hash_table(nullptr, &cudaMemDeconstructor),
+        prime_list(new uint32_t[config.get_size_hash_table() >> 2]),
+        block_size(BLOCK_SIZE), grid_size(GRID_SIZE), prime_cnt(0) {
     size_t size_hash_table = get_size_hash_table();
     size_t num_hash_func = get_num_hash_func();
     uint32_t *ptr_cuda_hash_table = nullptr;

@@ -20,13 +20,12 @@ __global__ void lookup_global(uint32_t *ptr_hash_table, size_t size_hash_table,
 __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               size_t num_hash_func, uint32_t *array_coef,
                               uint32_t *array_key, uint32_t num_array_key);
-__global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
-                              size_t num_hash_func, uint32_t *array_coef,
-                              uint32_t max_eviction, uint32_t *array_key,
-                              uint32_t num_array_key,
-                              uint32_t *res_pos_hash_func,
-                              uint32_t *res_pos_hash_array,
-                              uint32_t *exceed_max_eviction);
+__global__ void
+insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
+              size_t num_hash_func, uint32_t *array_coef, uint32_t max_eviction,
+              uint32_t *array_key, uint32_t num_array_key,
+              uint32_t *res_pos_hash_func, uint32_t *res_pos_hash_array,
+              uint32_t *exceed_max_eviction, uint32_t if_replace_key);
 /**
  * @brief
  *
@@ -57,13 +56,13 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
 // hash
 __device__ uint32_t hash_device(size_t i, uint64_t key, uint32_t *coef,
                                 uint64_t h_array_size) {
-  uint64_t value = 1;
+  uint64_t value = 0;
 #pragma unroll
   for (int i = 0; i < NUM_HASH_FUNC_COEF; ++i) {
     value *= key;
     value += coef[i];
-    value %= PRIME;
   }
+  value %= PRIME;
   uint64_t pos = value % h_array_size;
   uint32_t ret = static_cast<uint32_t>(pos + i * h_array_size);
   return ret;
@@ -127,13 +126,12 @@ __global__ void delete_global(uint32_t *ptr_hash_table, size_t size_hash_table,
 
 // insert
 // res_pos_hash_func, res_pos_hash_array are used for lookup
-__global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
-                              size_t num_hash_func, uint32_t *array_coef,
-                              uint32_t max_eviction, uint32_t *array_key,
-                              uint32_t num_array_key,
-                              uint32_t *res_pos_hash_func,
-                              uint32_t *res_pos_hash_array,
-                              uint32_t *exceed_max_eviction) {
+__global__ void
+insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
+              size_t num_hash_func, uint32_t *array_coef, uint32_t max_eviction,
+              uint32_t *array_key, uint32_t num_array_key,
+              uint32_t *res_pos_hash_func, uint32_t *res_pos_hash_array,
+              uint32_t *exceed_max_eviction, uint32_t if_replace_key) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
   // lookup
   lookup_device(ptr_hash_table, size_hash_table, array_key, num_array_key,
@@ -157,15 +155,19 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
     }
     uint32_t hash_value;
     size_t j = 0;
+    uint32_t key = array_key[k];
     for (; j < max_eviction; j++) {
       size_t m = j % num_hash_func;
       // calc hash value
-      hash_value = hash_device(
-          m, array_key[k], &array_coef[m * NUM_HASH_FUNC_COEF], h_array_size);
+      hash_value = hash_device(m, key, &array_coef[m * NUM_HASH_FUNC_COEF],
+                               h_array_size);
       // try to insert
       // if failed, exchange the key with the existing key
-      array_key[k] = atomicExch(&ptr_hash_table[hash_value], array_key[k]);
-      if (array_key[k] == 0) {
+      key = atomicExch(&ptr_hash_table[hash_value], key);
+      if (key == 0) {
+        if (if_replace_key) {
+          array_key[k] = 0;
+        }
         break;
       }
     }
@@ -220,7 +222,6 @@ void CuckooHashCUDA::rehash() {
 
   uint32_t *ptr_cuda_new_hash_table = nullptr;
   cudaMallocManaged(&ptr_cuda_new_hash_table, s_hash_table * sizeof(uint32_t));
-  cudaMemset(ptr_cuda_new_hash_table, 0, s_hash_table * sizeof(uint32_t));
   auto new_hash_table = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_new_hash_table, &cudaMemDeconstructor);
   std::swap(hash_table, new_hash_table);
@@ -234,10 +235,8 @@ void CuckooHashCUDA::rehash() {
   uint32_t *ptr_cuda_exceed_max_eviction = nullptr;
   cudaMallocManaged(&ptr_cuda_res_pos_hash_func,
                     s_hash_table * sizeof(uint32_t));
-  cudaMemset(ptr_cuda_res_pos_hash_func, 0, s_hash_table * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_res_pos_hash_array,
                     s_hash_table * sizeof(uint32_t));
-  cudaMemset(ptr_cuda_res_pos_hash_array, 0, s_hash_table * sizeof(uint32_t));
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(uint32_t));
   auto res_pos_hash_func = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_res_pos_hash_func, &cudaMemDeconstructor);
@@ -245,14 +244,18 @@ void CuckooHashCUDA::rehash() {
       ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
-  *exceed_max_eviction = 0;
 
   while (1) {
+    cudaMemset(hash_table.get(), 0, s_hash_table * sizeof(uint32_t));
+    cudaMemset(res_pos_hash_func.get(), 0, s_hash_table * sizeof(uint32_t));
+    cudaMemset(res_pos_hash_array.get(), 0, s_hash_table * sizeof(uint32_t));
+    *exceed_max_eviction = 0;
+
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), get_max_eviction(), new_hash_table.get(),
         get_size_hash_table(), res_pos_hash_func.get(),
-        res_pos_hash_array.get(), exceed_max_eviction.get());
+        res_pos_hash_array.get(), exceed_max_eviction.get(), 0);
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
@@ -260,7 +263,7 @@ void CuckooHashCUDA::rehash() {
     }
 
     if (*exceed_max_eviction) {
-      rehash();
+      std::cerr << "Rehashing..." << std::endl;
     } else {
       break;
     }
@@ -394,7 +397,7 @@ void CuckooHashCUDA::insert(Instruction inst) {
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), max_eviction, array_key.get(), num_array_key,
         res_pos_hash_func.get(), res_pos_hash_array.get(),
-        exceed_max_eviction.get());
+        exceed_max_eviction.get(), 1);
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
