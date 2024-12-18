@@ -244,6 +244,14 @@ void CuckooHashCUDA::rehash() {
       ptr_cuda_new_hash_table, &cudaMemDeconstructor);
   std::swap(hash_table, new_hash_table);
 
+  size_t table_element_cnt = 0;
+  for (size_t i = 0; i < s_hash_table; ++i) {
+    if (new_hash_table[i] != 0) {
+      new_hash_table[table_element_cnt] = new_hash_table[i];
+      table_element_cnt++;
+    }
+  }
+
   // insert
   size_t num_threads = block_size;
   size_t num_blocks = grid_size;
@@ -260,7 +268,7 @@ void CuckooHashCUDA::rehash() {
     insert_global<<<num_blocks, num_threads>>>(
         hash_table.get(), s_hash_table, get_num_hash_func(),
         hash_func_coef.get(), get_max_eviction(), new_hash_table.get(),
-        s_hash_table, exceed_max_eviction.get(), 0);
+        table_element_cnt, exceed_max_eviction.get(), 0);
     cudaDeviceSynchronize();
 
     cudaError_t err = cudaGetLastError();
