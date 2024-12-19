@@ -277,7 +277,7 @@ void CuckooHashCUDA::rehash() {
   } while (*exceed_max_eviction);
 }
 
-hashTablePos CuckooHashCUDA::lookup(uint32_t) {
+hashTablePos CuckooHashCUDA::lookup(uint32_t key) {
   std::cout << "Do not call lookup(uint32_t key) in CuckooHashCUDA\n";
   return {UINT_MAX, UINT_MAX};
 }
@@ -293,9 +293,9 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   size_t num_array_key = inst.second.size();
   uint32_t *ptr_cuda_array_key = nullptr;
   cudaMallocManaged(&ptr_cuda_array_key, num_array_key * sizeof(uint32_t));
-  cudaMemset(ptr_cuda_array_key, 0, num_array_key * sizeof(uint32_t));
   auto array_key = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_array_key, cudaMemDeconstructor);
+
 #pragma omp parallel for
   for (size_t i = 0; i < num_array_key; ++i) {
     array_key[i] = inst.second[i];

@@ -26,9 +26,7 @@ int main(int argc, char **argv) {
 
       if (instruction == "lookup") {
         println("Lookup {} items", ids.size());
-        for (auto id : ids) {
-          cuckoo_hash.lookup(id);
-        }
+        cuckoo_hash.lookup(instruction_set);
         println("Done");
       } else if (instruction == "insert") {
         println("Insert {} items", ids.size());
