@@ -26,8 +26,9 @@ int main(int argc, char **argv) {
 
       cuckoo_hash.load(config.get_dump_file());
       if (instruction == "lookup") {
+        std::vector<cuckooHash::hashTablePos> t_result;
         println("Lookup {} items", ids.size());
-        cuckoo_hash.lookup(instruction_set);
+        cuckoo_hash.lookup(instruction_set, t_result);
       } else if (instruction == "insert") {
         println("Insert {} items", ids.size());
         cuckoo_hash.insert(instruction_set);

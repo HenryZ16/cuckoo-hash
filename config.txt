@@ -1,5 +1,5 @@
 num_hash_func            2
 size_hash_table          33554432
-input_file               data_lookup_7
+input_file               data_lookup_0
 is_binary                1
 eviction_chain_increment 64
