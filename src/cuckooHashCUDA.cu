@@ -281,7 +281,7 @@ hashTablePos CuckooHashCUDA::lookup(uint32_t key) {
   std::cout << "Do not call lookup(uint32_t key) in CuckooHashCUDA\n";
   return {UINT_MAX, UINT_MAX};
 }
-void CuckooHashCUDA::lookup(const Instruction& inst,
+void CuckooHashCUDA::lookup(const Instruction &inst,
                             std::vector<hashTablePos> &results) {
   results.clear();
   if (inst.first != "lookup") {
@@ -350,7 +350,7 @@ void CuckooHashCUDA::insert(uint32_t key) {
   std::cout << "Do not call insert(uint32_t key) in CuckooHashCUDA\n";
 }
 
-void CuckooHashCUDA::insert(const Instruction& inst) {
+void CuckooHashCUDA::insert(const Instruction &inst) {
   if (inst.first != "insert") {
     return;
   }
@@ -439,10 +439,16 @@ void CuckooHashCUDA::load(const std::string &filename) {
   input.seekg(0, std::ios::beg);
 
   size_t s_hash_table = get_size_hash_table();
-  if (file_size != s_hash_table * sizeof(uint32_t)) {
-    throw std::runtime_error("File size does not match the hash table size");
+  if (file_size != s_hash_table * sizeof(uint32_t) + get_num_hash_func() *
+                                                         NUM_HASH_FUNC_COEF *
+                                                         sizeof(uint64_t)) {
+    std::cout << "File size does not match the hash table size, hash table "
+                 "will stay unchanged\n";
+    return;
   }
 
+  input.read(reinterpret_cast<char *>(hash_func_coef.get()),
+             get_num_hash_func() * NUM_HASH_FUNC_COEF * sizeof(uint64_t));
   input.read(reinterpret_cast<char *>(hash_table.get()),
              s_hash_table * sizeof(uint32_t));
   input.close();
@@ -457,6 +463,8 @@ void CuckooHashCUDA::dump(const std::string &filename) {
     throw std::runtime_error("Cannot open file " + filename);
   }
 
+  output.write(reinterpret_cast<const char *>(hashFuncCoef.get()),
+               get_num_hash_func() * NUM_HASH_FUNC_COEF * sizeof(uint64_t));
   output.write(reinterpret_cast<const char *>(hash_table.get()),
                get_size_hash_table() * sizeof(uint32_t));
   output.close();
