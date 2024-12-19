@@ -37,16 +37,19 @@ for j in ${num_hash_func[@]}; do
         echo "Cuckoo Hash Benchmark Experiment with ${j} hash functions and inserting ${k} keys" > $log_file
         echo "----------" >> $log_file
         for ((i=0; i<$repetition; i++)); do
+            ${BUILD_DIR}/data_generator $input_file insert $k
+
             echo "num_hash_func            ${j}" > $config_file
             echo "size_hash_table          ${size_hash_table}" >> $config_file
             echo "input_file               ${input_file}" >> $config_file
             echo "dump_file                data" >> $config_file
             echo "is_binary                1" >> $config_file
             echo "eviction_chain_increment 64" >> $config_file
-
-            ${BUILD_DIR}/data_generator $input_file insert $k
-
             ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+            echo "----------" >> $log_file
+            echo "Repetition ${i} done." >> $log_file
+            echo "----------" >> $log_file
+            rm -rf data
         done
     done
 done

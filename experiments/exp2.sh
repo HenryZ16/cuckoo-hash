@@ -43,6 +43,7 @@ for j in ${num_hash_func[@]}; do
             echo "is_binary                1" >> $config_file
             echo "eviction_chain_increment 64" >> $config_file  
             ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+            echo "----------" >> $log_file
 
             for((m=0; m<=10; m++)); do
                 echo "num_hash_func            ${j}" > $config_file
@@ -52,7 +53,11 @@ for j in ${num_hash_func[@]}; do
                 echo "is_binary                1" >> $config_file
                 echo "eviction_chain_increment 64" >> $config_file  
                 ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+                echo "----------" >> $log_file
             done
+            echo "Repetition ${i} done." >> $log_file
+            echo "----------" >> $log_file
+            rm -rf data
         done
     done
 done
