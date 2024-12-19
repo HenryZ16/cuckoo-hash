@@ -40,7 +40,7 @@ public:
   virtual void insert(uint32_t key) = 0;
   virtual void insert(Instruction inst) = 0;
   virtual hashTablePos lookup(uint32_t key) = 0;
-  virtual std::vector<hashTablePos> lookup(Instruction inst) = 0;
+  virtual void lookup(Instruction inst, std::vector<hashTablePos> &res) = 0;
   virtual void delete_key(uint32_t key) = 0;
   virtual void print() = 0;
   virtual ~CuckooHash() = default;

@@ -60,7 +60,8 @@ public:
   virtual void insert(uint32_t key) override;
   virtual void insert(Instruction inst) override;
   virtual hashTablePos lookup(uint32_t key) override;
-  virtual std::vector<hashTablePos> lookup(Instruction inst) override;
+  virtual void lookup(Instruction inst,
+                      std::vector<hashTablePos> &res) override;
   virtual void delete_key(uint32_t key) override;
   virtual void print() override;
   virtual ~CuckooHashDefault() = default;

@@ -281,9 +281,11 @@ hashTablePos CuckooHashCUDA::lookup(uint32_t key) {
   std::cout << "Do not call lookup(uint32_t key) in CuckooHashCUDA\n";
   return {UINT_MAX, UINT_MAX};
 }
-std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
+void CuckooHashCUDA::lookup(Instruction inst,
+                            std::vector<hashTablePos> &results) {
+  results.clear();
   if (inst.first != "lookup") {
-    return {};
+    return;
   }
 
 #ifdef BENCHMARK
@@ -322,7 +324,6 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
       res_pos_hash_func.get(), res_pos_hash_array.get());
   cudaDeviceSynchronize();
 
-  std::vector<hashTablePos> results;
 #pragma omp parallel for
   for (size_t i = 0; i < num_array_key; ++i) {
     results.push_back({res_pos_hash_func[i], res_pos_hash_array[i]});
@@ -333,8 +334,6 @@ std::vector<hashTablePos> CuckooHashCUDA::lookup(Instruction inst) {
   std::cout << "Time elapsed in looking up " << inst.second.size()
             << " items: " << (double)(t_end - t_start) / CLOCKS_PER_SEC << "\n";
 #endif
-
-  return results;
 }
 
 void CuckooHashCUDA::delete_key(uint32_t key) {

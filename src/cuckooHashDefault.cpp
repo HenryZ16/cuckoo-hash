@@ -52,12 +52,12 @@ hashTablePos CuckooHashDefault::lookup(uint32_t key) {
   return success;
 }
 
-std::vector<hashTablePos> CuckooHashDefault::lookup(Instruction inst) {
-  std::vector<hashTablePos> results;
+void CuckooHashDefault::lookup(Instruction inst,
+                               std::vector<hashTablePos> &res) {
+  res.clear();
   for (size_t i = 0; i < inst.second.size(); ++i) {
-    results.push_back(lookup(inst.second[i]));
+    res.push_back(lookup(inst.second[i]));
   }
-  return results;
 }
 
 void CuckooHashDefault::delete_key(uint32_t key) {
