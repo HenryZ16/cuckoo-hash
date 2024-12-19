@@ -425,4 +425,42 @@ void CuckooHashCUDA::insert(Instruction inst) {
 void CuckooHashCUDA::print() {
   std::cout << "Do not call print() in CuckooHashCUDA\n";
 }
+
+// load a binary file to the hash_table
+void cuckooHash::load(const std::string &filename) {
+  std::ifstream input(filename);
+  if (!input.is_open()) {
+    std::cout << "No dump file found, hash table will stay unchanged\n";
+    return;
+  }
+
+  input.seekg(0, std::ios::end);
+  size_t file_size = input.tellg();
+  input.seekg(0, std::ios::beg);
+
+  size_t s_hash_table = get_size_hash_table();
+  if (file_size != s_hash_table * sizeof(uint32_t)) {
+    throw std::runtime_error("File size does not match the hash table size");
+  }
+
+  input.read(reinterpret_cast<char *>(hash_table.get()),
+             s_hash_table * sizeof(uint32_t));
+  input.close();
+
+  std::cout << "Loaded hash table from " << filename << std::endl;
+}
+
+// dump the hash_table to a binary file
+void cuckooHash::dump(const std::string &filename) {
+  std::ofstream output(filename);
+  if (!output.is_open()) {
+    throw std::runtime_error("Cannot open file " + filename);
+  }
+
+  output.write(reinterpret_cast<const char *>(hash_table.get()),
+               get_size_hash_table() * sizeof(uint32_t));
+  output.close();
+
+  std::cout << "Dumped hash table to " << filename << std::endl;
+}
 } // namespace cuckooHash

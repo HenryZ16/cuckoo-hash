@@ -24,21 +24,22 @@ int main(int argc, char **argv) {
         break;
       }
 
+      cuckoo_hash.load(config.get_dump_file());
       if (instruction == "lookup") {
         println("Lookup {} items", ids.size());
         cuckoo_hash.lookup(instruction_set);
-        println("Done");
       } else if (instruction == "insert") {
         println("Insert {} items", ids.size());
         cuckoo_hash.insert(instruction_set);
-        println("Done");
       } else if (instruction == "delete") {
         println("Delete {} items", ids.size());
         for (auto id : ids) {
           cuckoo_hash.delete_key(id);
         }
-        println("Done");
       }
+
+      cuckoo_hash.dump(config.get_dump_file());
+      println("Done");
     }
   } catch (const std::exception &e) {
     println("Error: {}", e.what());

@@ -102,6 +102,8 @@ public:
   virtual std::vector<hashTablePos> lookup(Instruction inst) override;
   virtual void delete_key(uint32_t key) override;
   virtual void print() override;
+  void load(const std::string &filename);
+  void dump(const std::string &filename);
   virtual ~CuckooHashCUDA() = default;
 };
 } // namespace cuckooHash

@@ -77,6 +77,9 @@ Config::Config(const std::string &filename)
     } else if (key == "input_file") {
       println("input_file: {}", value);
       input_file = value;
+    } else if (key == "dump_file") {
+      println("dump_file: {}", value);
+      dump_file = value;
     } else if (key == "is_binary") {
       println("is_binary: {}", value);
       is_binary = std::stoi(value);
