@@ -39,6 +39,7 @@ for j in ${num_hash_func[@]}; do
             echo "num_hash_func            ${j}" > $config_file
             echo "size_hash_table          ${size_hash_table}" >> $config_file
             echo "input_file               ${input_file}_insert" >> $config_file
+            echo "dump_file                data" >> $config_file
             echo "is_binary                1" >> $config_file
             echo "eviction_chain_increment 64" >> $config_file  
             ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
@@ -47,6 +48,7 @@ for j in ${num_hash_func[@]}; do
                 echo "num_hash_func            ${j}" > $config_file
                 echo "size_hash_table          ${size_hash_table}" >> $config_file
                 echo "input_file               ${input_file}_lookup_${m}" >> $config_file
+                echo "dump_file                data" >> $config_file
                 echo "is_binary                1" >> $config_file
                 echo "eviction_chain_increment 64" >> $config_file  
                 ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file

@@ -281,7 +281,7 @@ hashTablePos CuckooHashCUDA::lookup(uint32_t key) {
   std::cout << "Do not call lookup(uint32_t key) in CuckooHashCUDA\n";
   return {UINT_MAX, UINT_MAX};
 }
-void CuckooHashCUDA::lookup(Instruction inst,
+void CuckooHashCUDA::lookup(const Instruction& inst,
                             std::vector<hashTablePos> &results) {
   results.clear();
   if (inst.first != "lookup") {
@@ -324,9 +324,10 @@ void CuckooHashCUDA::lookup(Instruction inst,
       res_pos_hash_func.get(), res_pos_hash_array.get());
   cudaDeviceSynchronize();
 
+  results.resize(num_array_key);
 #pragma omp parallel for
   for (size_t i = 0; i < num_array_key; ++i) {
-    results.push_back({res_pos_hash_func[i], res_pos_hash_array[i]});
+    results[i] = std::make_pair(res_pos_hash_func[i], res_pos_hash_array[i]);
   }
 
 #ifdef BENCHMARK
@@ -349,7 +350,7 @@ void CuckooHashCUDA::insert(uint32_t key) {
   std::cout << "Do not call insert(uint32_t key) in CuckooHashCUDA\n";
 }
 
-void CuckooHashCUDA::insert(Instruction inst) {
+void CuckooHashCUDA::insert(const Instruction& inst) {
   if (inst.first != "insert") {
     return;
   }

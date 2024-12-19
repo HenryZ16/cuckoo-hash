@@ -52,7 +52,7 @@ hashTablePos CuckooHashDefault::lookup(uint32_t key) {
   return success;
 }
 
-void CuckooHashDefault::lookup(Instruction inst,
+void CuckooHashDefault::lookup(const Instruction& inst,
                                std::vector<hashTablePos> &res) {
   res.clear();
   for (size_t i = 0; i < inst.second.size(); ++i) {
@@ -94,7 +94,7 @@ void CuckooHashDefault::insert(uint32_t key) {
   insert(key);
 }
 
-void CuckooHashDefault::insert(Instruction inst) {
+void CuckooHashDefault::insert(const Instruction& inst) {
   if (inst.first != "insert") {
     return;
   }
