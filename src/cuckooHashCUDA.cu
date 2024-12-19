@@ -439,9 +439,8 @@ void CuckooHashCUDA::load(const std::string &filename) {
   input.seekg(0, std::ios::beg);
 
   size_t s_hash_table = get_size_hash_table();
-  if (file_size != s_hash_table * sizeof(uint32_t) + get_num_hash_func() *
-                                                         NUM_HASH_FUNC_COEF *
-                                                         sizeof(uint64_t)) {
+  if (file_size != get_num_hash_func() * NUM_HASH_FUNC_COEF * sizeof(uint64_t) +
+                       s_hash_table * sizeof(uint32_t)) {
     std::cout << "File size does not match the hash table size, hash table "
                  "will stay unchanged\n";
     return;
@@ -463,7 +462,7 @@ void CuckooHashCUDA::dump(const std::string &filename) {
     throw std::runtime_error("Cannot open file " + filename);
   }
 
-  output.write(reinterpret_cast<const char *>(hashFuncCoef.get()),
+  output.write(reinterpret_cast<const char *>(hash_func_coef.get()),
                get_num_hash_func() * NUM_HASH_FUNC_COEF * sizeof(uint64_t));
   output.write(reinterpret_cast<const char *>(hash_table.get()),
                get_size_hash_table() * sizeof(uint32_t));

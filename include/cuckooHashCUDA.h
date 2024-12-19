@@ -34,7 +34,6 @@ class CuckooHashCUDA : public CuckooHash {
     std::random_device rd;
     std::mt19937 gen(rd());
     size_t num_hash_func = get_num_hash_func();
-    size_t size_hash_table = get_size_hash_table();
     std::uniform_int_distribution<> dis(63, prime_cnt);
     for (size_t i = 0; i < num_hash_func * NUM_HASH_FUNC_COEF; i++) {
       hash_func_coef[i] =
@@ -97,9 +96,10 @@ public:
   // Default destructor, copy constructor, and copy assignment operator
   // Operations
   virtual void insert(uint32_t key) override;
-  virtual void insert(const Instruction& inst) override;
+  virtual void insert(const Instruction &inst) override;
   virtual hashTablePos lookup(uint32_t key) override;
-  virtual void lookup(const Instruction& inst, std::vector<hashTablePos> &res) override;
+  virtual void lookup(const Instruction &inst,
+                      std::vector<hashTablePos> &res) override;
   virtual void delete_key(uint32_t key) override;
   virtual void print() override;
   void load(const std::string &filename);
