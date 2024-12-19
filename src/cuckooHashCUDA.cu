@@ -427,7 +427,7 @@ void CuckooHashCUDA::print() {
 }
 
 // load a binary file to the hash_table
-void cuckooHash::load(const std::string &filename) {
+void CuckooHashCUDA::load(const std::string &filename) {
   std::ifstream input(filename);
   if (!input.is_open()) {
     std::cout << "No dump file found, hash table will stay unchanged\n";
@@ -451,7 +451,7 @@ void cuckooHash::load(const std::string &filename) {
 }
 
 // dump the hash_table to a binary file
-void cuckooHash::dump(const std::string &filename) {
+void CuckooHashCUDA::dump(const std::string &filename) {
   std::ofstream output(filename);
   if (!output.is_open()) {
     throw std::runtime_error("Cannot open file " + filename);
