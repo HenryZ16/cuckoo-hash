@@ -9,7 +9,14 @@
 #include "primeFilter.h"
 
 #define BLOCK_SIZE 32
+#if __CUDA_ARCH__ == 700 // V100
+#define GRID_SIZE 5120
+#elif __CUDA_ARCH__ == 750 // 2080 Ti
+#define GRID_SIZE 2176
+#else
 #define GRID_SIZE 2048
+#endif
+
 #define PRIME INT_MAX
 #define NUM_HASH_FUNC_COEF 4
 

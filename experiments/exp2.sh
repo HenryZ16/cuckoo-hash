@@ -10,7 +10,7 @@
 # experiment configurations
 export CUDA_VISIBLE_DEVICES=1
 BUILD_DIR=build
-LOG_DIR="log-exp2"
+LOG_DIR="log-exp2-v100"
 input_file="data"
 config_file="config.txt"
 repetition=5
