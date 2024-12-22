@@ -2,7 +2,7 @@
 BUILD_DIR=build
 N_PROC=$(lscpu | grep "^CPU(s):" | awk '{print $2}')
 
-GCC_PATH=$(spack find --format="{prefix}/bin/g++" gcc@13)
+GCC_PATH=/public/software/gcc/gcc-11.2.0/bin/g++
 
 echo "[build.sh] Building the project"
 rm -rf $BUILD_DIR

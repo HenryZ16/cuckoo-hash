@@ -1,6 +1,6 @@
-num_hash_func            2
-size_hash_table          16944988
+num_hash_func            3
+size_hash_table          23488102
 input_file               data.txt
 dump_file                data
 is_binary                1
-eviction_chain_increment 64
+eviction_chain_increment 256

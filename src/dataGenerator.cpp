@@ -2,8 +2,7 @@
 #include <fstream>
 #include <memory>
 #include <random>
-
-#include "utils.h"
+#include <iostream>
 
 // generate insert instruction for 16777216 keys, then generate lookup
 // instruction 11 times for the keys. For the i-th lookup, 100 - 10i keys are
@@ -15,9 +14,8 @@ int gen_exp2(const std::string &output_file);
 // receive the argument as: <output_file> <instruction> <cnt>
 int main(int argc, char **argv) {
   if (argc < 4) {
-    println(
-        "Usage: {} <output_file> <instruction> <cnt> [<instruction> <cnt>] ...",
-        argv[0]);
+    std::cout << 
+        "Usage: " << argv[0] << " <output_file> <instruction> <cnt> [<instruction> <cnt>] ..." << std::endl;
     return -1;
   }
   std::ofstream output_file(argv[1], std::ios::binary);
@@ -26,7 +24,7 @@ int main(int argc, char **argv) {
     std::string instruction = argv[i];
     uint32_t cnt = std::stoi(argv[i + 1]);
     if (!output_file.is_open()) {
-      println("Failed to open file: {}", argv[1]);
+      std::cout << "Failed to open file: " << argv[1] << std::endl;
       output_file.close();
       return 1;
     }
@@ -37,7 +35,7 @@ int main(int argc, char **argv) {
     }
     if (instruction != "insert" && instruction != "delete" &&
         instruction != "lookup") {
-      println("Invalid instruction: {}", instruction);
+      std::cout << "Invalid instruction: " << instruction << std::endl;
       output_file.close();
       return 1;
     }

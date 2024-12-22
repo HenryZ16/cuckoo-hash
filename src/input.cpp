@@ -1,5 +1,4 @@
 #include "input.h"
-#include "utils.h"
 
 namespace cuckooHash {
 Instruction Input::fetch_instruction() {

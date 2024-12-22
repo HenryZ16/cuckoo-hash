@@ -359,7 +359,7 @@ void CuckooHashCUDA::insert(const Instruction &inst) {
   uint64_t t_start = std::clock();
 #endif
 
-  size_t max_eviction = 4 * std::log2(inst.second.size());
+  size_t max_eviction = 12 * std::log2(inst.second.size());
   max_eviction = max_eviction < 4 ? 4 : max_eviction;
   set_max_eviction(max_eviction);
   std::cout << "Set max eviction: " << get_max_eviction() << std::endl;

@@ -1,0 +1,309 @@
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216
+mkdir: cannot create directory ‘log-exp1-2080Ti’: File exists
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 16777216
+mkdir: cannot create directory ‘log-exp2-2080Ti’: File exists
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+slurmstepd: error: *** JOB 703400 ON sist_gpu70 CANCELLED AT 2024-12-21T17:18:37 ***
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+build/cuckoo_hash: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by build/cuckoo_hash)
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.

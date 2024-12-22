@@ -8,9 +8,8 @@
 # execute the scripts in "exp" at the root directory of this project cuckoo-hash
 
 # experiment configurations
-export CUDA_VISIBLE_DEVICES=1
 BUILD_DIR=build
-LOG_DIR="log-exp2-v100"
+LOG_DIR="log-exp2-2080Ti"
 input_file="data"
 config_file="config.txt"
 repetition=5

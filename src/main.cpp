@@ -1,12 +1,13 @@
+#include <string>
+
 #include "config.h"
 #include "cuckooHashCUDA.h"
 #include "input.h"
-#include "utils.h"
 
 // receive the argument as: <config_file>
 int main(int argc, char **argv) {
   if (argc < 2) {
-    println("Usage: {} <config_file>", argv[0]);
+    std::cout << "Usage: " << argv[0] << " <config_file>";
     return 1;
   }
 
@@ -27,23 +28,23 @@ int main(int argc, char **argv) {
       cuckoo_hash.load(config.get_dump_file());
       if (instruction == "lookup") {
         std::vector<cuckooHash::hashTablePos> t_result;
-        println("Lookup {} items", ids.size());
+        std::cout << "Lookup " << ids.size() << " items" << std::endl;
         cuckoo_hash.lookup(instruction_set, t_result);
       } else if (instruction == "insert") {
-        println("Insert {} items", ids.size());
+        std::cout << "Insert " << ids.size() << " items" << std::endl;
         cuckoo_hash.insert(instruction_set);
       } else if (instruction == "delete") {
-        println("Delete {} items", ids.size());
+        std::cout << "Delete " << ids.size() << " items" << std::endl;
         for (auto id : ids) {
           cuckoo_hash.delete_key(id);
         }
       }
 
       cuckoo_hash.dump(config.get_dump_file());
-      println("Done");
+      std::cout << "Done" << std::endl;
     }
   } catch (const std::exception &e) {
-    println("Error: {}", e.what());
+    std::cout << "Error: " << e.what() << std::endl;
     return 1;
   }
 }

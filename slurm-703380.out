@@ -1,0 +1,809 @@
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31057 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31058 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31060 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31061 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31063 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31064 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31066 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31067 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31069 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31070 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31072 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31073 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31076 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31077 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31079 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31080 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31082 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31083 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31085 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31086 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31088 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31089 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31091 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31092 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31094 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31095 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31097 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31098 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31100 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31101 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31103 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31104 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31106 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31107 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31109 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31110 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31112 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31113 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31115 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31116 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31118 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31119 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31121 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31122 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31124 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31125 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31127 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31128 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31130 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31131 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31133 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31134 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31136 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31137 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31139 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31140 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31142 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31143 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31145 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31146 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31148 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31149 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31151 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31152 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31154 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31155 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31157 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31158 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31160 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31161 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31163 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31164 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31166 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31167 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31169 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31170 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31172 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31173 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31175 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31176 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31178 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31179 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31182 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31183 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31185 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31186 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31188 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31189 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31191 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31192 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31194 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31195 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31197 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31198 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31200 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31201 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31203 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31204 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31206 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31207 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31210 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31211 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31213 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31214 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31216 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31217 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31219 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31220 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31222 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31223 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31225 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31226 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31228 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31229 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31231 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31232 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31234 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31235 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31237 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31239 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31241 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31242 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31244 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31245 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31247 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31248 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31250 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31251 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31253 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31254 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31256 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31257 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31259 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31260 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31262 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31263 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31265 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31266 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31268 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31269 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31271 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31272 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31274 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31275 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31277 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31278 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31280 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31281 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31283 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31284 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31286 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31287 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31289 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31290 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31293 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31294 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31296 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31297 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31299 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31300 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31302 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31303 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31305 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31306 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31308 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31309 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31311 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31312 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31314 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31315 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31317 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31318 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31320 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31321 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31323 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31324 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31326 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31327 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31329 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31330 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31332 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31333 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31335 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31336 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31338 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31339 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31341 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31342 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31344 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31345 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31347 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31348 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31350 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31351 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31353 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31354 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31356 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31357 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31359 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31360 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31362 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31363 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31365 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31366 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31368 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31369 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31371 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31372 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31374 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31375 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31377 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31378 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31380 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31381 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31383 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31384 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31386 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31387 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31389 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31390 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31392 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31394 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31396 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31397 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31399 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31400 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31402 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31403 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31405 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31406 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31408 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31409 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31411 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31412 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31415 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31416 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31418 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31419 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31421 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31422 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31424 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31425 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31427 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31428 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31430 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31431 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31433 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31434 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31436 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31437 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31439 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31440 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31442 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31443 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31445 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31446 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31448 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31449 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31451 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31452 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31454 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31455 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31457 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31458 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31460 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31461 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31463 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31464 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31466 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31467 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31469 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31470 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31472 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31473 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31475 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31476 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31478 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31479 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31481 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31482 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31484 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31485 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31487 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31488 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31490 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31491 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31493 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31494 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31496 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31497 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp1.sh: line 33: 31499 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31500 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31502 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31503 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31505 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31506 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31508 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31509 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp1.sh: line 33: 31511 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+./experiments/exp1.sh: line 33: 31512 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 16777216
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+./experiments/exp2.sh: line 1: 31516 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31517 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31518 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31520 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31521 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31522 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31523 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31524 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31525 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31526 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31527 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31528 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31529 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31531 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31532 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31533 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31534 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31535 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31536 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31537 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31538 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31539 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31540 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31541 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31542 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31543 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31545 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31546 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31547 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31548 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31549 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31550 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31551 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31552 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31553 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31554 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31555 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31556 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31557 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31559 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31560 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31568 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31588 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31589 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31590 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31591 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31592 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31593 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31594 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31595 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31596 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31597 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31599 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31600 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31601 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31602 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31603 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31604 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31605 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31607 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31608 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31609 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31610 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31611 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31612 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+./experiments/exp2.sh: line 1: 31614 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31615 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31616 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31617 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31618 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31619 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31620 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31621 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31622 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31623 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31624 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31625 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31626 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31628 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31629 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31630 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31631 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31632 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31633 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31634 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31635 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31636 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31637 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31638 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31639 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31640 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31642 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31643 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31644 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31645 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31646 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31647 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31648 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31649 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31650 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31651 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31652 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31653 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31654 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31656 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31657 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31658 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31659 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31660 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31661 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31662 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31663 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31664 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31665 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31666 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31668 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31669 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31671 Illegal instruction     ${BUILD_DIR}/data_generator $input_file exp2 1
+./experiments/exp2.sh: line 1: 31672 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31673 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31674 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31675 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31676 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31677 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31678 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31679 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31680 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31681 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31682 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 31683 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+the numbers of hash functions are: 2 3
+the sizes of hash tables are: 16944988 17112760 17280532 17448304 17616076 18454937 20132659 21810380 23488102 25165824 26843545 28521267 30198988 31876710 33554432
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31687 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31688 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31691 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31692 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31695 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31696 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31699 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31700 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31703 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31704 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31707 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31708 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31711 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31712 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31715 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31716 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31719 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31720 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31723 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31724 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31727 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31728 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31731 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31732 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31735 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31736 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31739 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31740 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31743 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31744 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31747 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31748 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31751 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31752 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31755 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31756 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31759 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31760 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31763 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31764 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31767 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31768 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31771 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31772 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31775 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31776 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31779 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31780 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31783 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31785 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31788 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31789 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31792 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31793 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31796 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31797 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31800 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31801 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31804 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31805 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31808 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31809 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31812 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31813 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31816 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31817 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31820 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31821 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31824 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31825 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31828 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31829 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31832 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31833 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31836 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31837 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31840 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31841 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31844 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31845 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31848 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31849 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31852 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31853 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31856 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31857 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31860 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31861 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31864 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31865 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31868 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31869 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31872 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31873 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31876 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31877 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31880 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31881 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31884 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31885 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31888 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31889 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31892 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31893 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31896 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31897 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31900 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31901 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31904 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31905 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31908 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31909 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31912 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31914 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31917 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31918 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31921 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31922 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31925 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31926 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31929 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31930 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31934 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31935 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31938 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31939 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31942 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31943 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31946 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31947 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31950 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31951 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31954 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31955 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31958 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31959 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31962 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31963 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31966 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31967 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31970 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31971 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31974 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31975 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31978 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31979 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31982 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31983 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31986 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31987 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31990 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31991 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31994 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31995 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31998 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 31999 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32002 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32003 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32006 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32007 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32010 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32011 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32014 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32015 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32018 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32019 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32022 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32023 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32026 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32027 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32030 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32031 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32034 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32035 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32038 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32039 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32042 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32043 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32047 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32049 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32052 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32053 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32056 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32057 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32060 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32061 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32064 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32065 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32068 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32069 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32072 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32073 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32076 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32077 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32080 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32081 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32084 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32085 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32088 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32089 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32092 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32093 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32096 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32097 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32100 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32101 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32104 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32105 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32108 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32109 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32112 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32113 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32116 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32117 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32120 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32121 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32124 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32125 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32128 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32129 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32132 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32133 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32136 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32137 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32140 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32141 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32144 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32145 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32148 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32149 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32152 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32153 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32156 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32157 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32160 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32161 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32164 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32165 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32168 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32169 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32172 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32173 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32176 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32177 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32180 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32181 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32184 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32186 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32189 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32190 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32193 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32194 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32197 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32198 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32201 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32202 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32205 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32206 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32209 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32210 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32213 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32214 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32217 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32218 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32221 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32222 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32225 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32226 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32229 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32230 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32233 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32234 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32237 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32238 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32241 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32242 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32245 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32246 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32249 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32250 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32253 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32254 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32257 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32258 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32261 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32262 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32265 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32266 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32269 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32270 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32273 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32274 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32277 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32278 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32281 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32282 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32289 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32290 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32293 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $cnt_array_key
+./experiments/exp3.sh: line 36: 32294 Illegal instruction     timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 16777216

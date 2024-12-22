@@ -1,0 +1,473 @@
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216
+mkdir: cannot create directory ‘log-exp1-2080Ti’: File exists
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 16777216
+mkdir: cannot create directory ‘log-exp2-2080Ti’: File exists
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 22995 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23024 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23053 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23082 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23111 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23140 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23169 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23198 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23228 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23258 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23287 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23316 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 23494 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23523 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23552 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23581 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23610 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23639 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23668 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23697 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23726 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23755 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23784 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 23814 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 24104 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24133 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24162 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24191 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24220 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24249 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24279 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24308 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24338 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24367 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24396 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24436 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 24507 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24632 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24689 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24718 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24747 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24778 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24808 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24839 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24868 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24898 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24927 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 24956 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 25060 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25089 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25118 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25147 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25176 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25205 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25234 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25265 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25294 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25323 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25352 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 25381 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert & look up experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 25994 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26023 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26052 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26081 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26110 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26139 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26168 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26197 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26226 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26255 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26284 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26314 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 26451 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26505 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26562 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26606 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26643 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26702 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26735 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26780 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26817 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26904 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26933 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 26962 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 27041 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27070 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27100 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27129 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27159 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27188 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27217 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27246 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27275 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27304 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27333 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27362 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 27492 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27522 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27551 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27580 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27609 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27638 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27667 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27696 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27725 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27754 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27783 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 27812 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Generated 16777216 keys
+Generated 0-th lookup
+Generated 1-th lookup
+Generated 2-th lookup
+Generated 3-th lookup
+Generated 4-th lookup
+Generated 5-th lookup
+Generated 6-th lookup
+Generated 7-th lookup
+Generated 8-th lookup
+Generated 9-th lookup
+Generated 10-th lookup
+./experiments/exp2.sh: line 1: 28150 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28179 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28208 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28238 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28267 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28296 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28325 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28354 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28384 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28413 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28442 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp2.sh: line 1: 28471 Segmentation fault      ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+the numbers of hash functions are: 2 3
+the sizes of hash tables are: 16944988 17112760 17280532 17448304 17616076 18454937 20132659 21810380 23488102 25165824 26843545 28521267 30198988 31876710 33554432
+mkdir: cannot create directory ‘log-exp3-2080Ti’: File exists
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 28531 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28565 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28599 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28631 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28664 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 28697 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28729 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28763 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28796 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28838 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 28871 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28904 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28962 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 28995 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29029 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29061 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29094 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29127 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29160 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29193 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29226 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29259 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29292 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29351 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29384 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29416 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29454 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29496 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29528 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29561 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29595 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29627 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29660 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29694 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29727 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29786 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29820 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29852 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29888 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 29955 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 29987 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30020 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30053 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30085 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30119 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 30152 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30185 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30243 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30305 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30414 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 30454 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30487 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30520 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30627 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30659 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 30692 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30910 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30942 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 30975 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31034 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31066 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31099 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31132 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31175 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31208 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31242 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31275 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31308 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31341 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31374 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 2 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31433 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31466 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31499 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31531 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31564 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31597 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31629 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31662 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31695 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31727 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31760 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31793 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31851 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31884 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31917 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 31951 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 31983 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32016 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32050 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32082 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32115 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32148 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32180 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32213 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32272 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32308 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32344 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32384 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32423 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32462 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32495 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32528 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32560 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32593 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32629 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32661 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32737 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32770 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32810 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32889 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 32923 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32956 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 32992 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33034 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33066 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 33108 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33141 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33199 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33232 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33265 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 33298 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33330 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33365 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33474 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33506 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 33539 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33592 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33790 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33823 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33882 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 33919 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33951 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 33985 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34029 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34061 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 34094 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34127 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34159 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34192 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34225 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 34257 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34316 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34350 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34383 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34417 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 16944988, 3 hash functions for 5 times.
+./experiments/exp3.sh: line 36: 34451 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34484 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34520 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34553 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp3.sh: line 36: 34594 Segmentation fault      timeout 1m ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+./experiments/exp4.sh: line 26: 2**i: command not found
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 16777216
+mkdir: cannot create directory ‘log-exp4-2080Ti’: File exists

@@ -1,0 +1,333 @@
+the numbers of hash functions are: 2 3
+the numbers of key arrays are: 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304 8388608 16777216
+mkdir: cannot create directory ‘log-exp1-2080Ti’: File exists
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40333 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40334 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40336 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40337 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40339 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40340 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40342 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40343 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40345 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40346 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40348 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40349 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40351 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40352 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40354 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40355 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40357 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40358 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40360 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40361 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40363 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40364 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40366 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40367 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40369 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40370 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40372 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40373 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40375 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40376 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40378 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40379 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40381 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40382 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40384 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40385 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40387 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40388 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40390 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40391 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40393 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40394 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40396 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40397 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40399 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40400 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40402 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40403 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40406 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40407 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40409 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40410 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40412 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40413 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40415 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40416 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40418 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40419 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40421 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40422 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40424 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40425 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40427 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40428 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40430 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40431 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40434 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40435 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40437 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40438 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40440 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40441 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40443 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40444 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40446 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40447 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40449 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40450 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40452 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40453 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40455 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40456 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40458 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40459 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40461 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40462 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40464 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40465 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40467 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40468 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40470 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40471 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40473 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40474 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40476 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40477 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40479 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40480 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40482 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40484 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40486 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40487 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40489 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40490 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40492 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40493 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40495 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40496 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40498 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40499 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40501 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40502 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40504 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40505 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40507 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40508 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40510 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40511 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40513 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40514 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40516 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40517 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40519 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40520 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40523 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40524 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40526 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40527 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40529 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40530 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40532 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40533 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40535 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40536 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40538 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40539 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40541 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40542 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40544 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40545 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 2 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40547 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40548 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40550 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40551 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40553 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40554 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40556 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40557 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40559 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40560 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1024 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40562 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40563 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40565 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40566 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40568 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40569 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40571 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40572 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40574 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40575 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2048 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40577 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40578 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40580 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40581 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40583 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40584 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40586 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40587 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40589 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40590 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4096 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40592 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40593 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40595 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40596 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40598 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40599 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40601 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40602 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40604 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40605 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8192 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40607 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40608 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40610 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40611 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40613 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40614 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40616 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40617 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40619 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40620 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16384 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40622 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40623 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40625 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40626 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40629 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40630 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40632 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40633 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40635 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40636 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 32768 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40638 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40639 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40641 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40642 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40644 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40645 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40647 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40648 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40650 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40651 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 65536 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40653 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40654 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40656 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40657 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40659 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40660 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40662 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40663 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40665 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40666 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 131072 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40668 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40669 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40671 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40672 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40674 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40675 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40677 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40678 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40680 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40681 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 262144 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40683 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40684 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40686 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40687 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40689 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40690 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40692 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40693 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40695 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40696 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 524288 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40698 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40699 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40701 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40702 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40704 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40705 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40707 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40708 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40710 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40711 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 1048576 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40713 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40714 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40716 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40717 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40719 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40720 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40722 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40723 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40725 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40726 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 2097152 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40728 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40729 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40731 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40732 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40734 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40735 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40737 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40738 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40740 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40741 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 4194304 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40744 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40745 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40747 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40748 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40750 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40751 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40753 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40754 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40756 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40757 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 8388608 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40759 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40760 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40762 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40763 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40765 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40766 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40768 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40769 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40771 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40772 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+Start to perform insert experiment with 16777216 keys on the hash table of size 33554432, 3 hash functions for 5 times.
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40774 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40775 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40777 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40778 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40780 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40781 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40783 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40784 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40786 Illegal instruction     ${BUILD_DIR}/data_generator $input_file insert $k
+/opt/gridview/slurm/spool/slurmd/job703383/slurm_script: line 33: 40787 Illegal instruction     ${BUILD_DIR}/cuckoo_hash $config_file >> $log_file

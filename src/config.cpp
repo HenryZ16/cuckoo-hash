@@ -1,7 +1,7 @@
 #include "config.h"
-#include "utils.h"
 #include <fstream>
 #include <string>
+#include <iostream>
 
 /* configs:
  *   # The number of hash functions used in Cuckoo Hash.
@@ -29,7 +29,7 @@ Config::Config(const std::string &filename)
     throw std::runtime_error("Cannot open file " + filename);
   }
 
-  println("Reading config file: {}", filename);
+  std::cout << "Reading config file: " << filename << std::endl;
   std::string line;
   while (std::getline(file, line)) {
     if (line.empty() || line[0] == '#') {
@@ -52,7 +52,7 @@ Config::Config(const std::string &filename)
     value.erase(value.find_last_not_of(" \n\r\t") + 1);
 
     if (key == "num_hash_func") {
-      println("num_hash_func: {}", value);
+      std::cout << "num_hash_func: " << value << std::endl;
       num_hash_func = std::stoul(value);
     } else if (key == "size_hash_table") {
       pos = value.find(' ');
@@ -72,19 +72,19 @@ Config::Config(const std::string &filename)
       } else {
         size = std::stoul(value);
       }
-      println("size_hash_table: {}", size);
+      std::cout << "size_hash_table: " << size << std::endl;
       size_hash_table = size;
     } else if (key == "input_file") {
-      println("input_file: {}", value);
+      std::cout << "input_file: " << value << std::endl;
       input_file = value;
     } else if (key == "dump_file") {
-      println("dump_file: {}", value);
+      std::cout << "dump_file: " << value << std::endl;
       dump_file = value;
     } else if (key == "is_binary") {
-      println("is_binary: {}", value);
+      std::cout << "is_binary: " << value << std::endl;
       is_binary = std::stoi(value);
     } else if (key == "eviction_chain_increment") {
-      println("eviction_chain_increment: {}", value);
+      std::cout << "eviction_chain_increment: " << value << std::endl;
       eviction_chain_increment = std::stoul(value);
     } else {
       throw std::runtime_error("Invalid config key: " + key);
