@@ -8,13 +8,13 @@
 #include "cuckooHash.h"
 #include "primeFilter.h"
 
-#define BLOCK_SIZE 32
+#define BLOCK_SIZE 256
 #if __CUDA_ARCH__ == 700 // V100
-#define GRID_SIZE 5120
+#define GRID_SIZE 640
 #elif __CUDA_ARCH__ == 750 // 2080 Ti
-#define GRID_SIZE 2176
+#define GRID_SIZE 272
 #else
-#define GRID_SIZE 2048
+#define GRID_SIZE 640
 #endif
 
 #define PRIME INT_MAX
@@ -74,7 +74,7 @@ public:
     uint64_t *ptr_cuda_hash_func_coef = nullptr;
     cudaMallocManaged(&ptr_cuda_hash_table, size_hash_table * sizeof(uint32_t));
     cudaMallocManaged(&ptr_cuda_hash_func_coef,
-                      num_hash_func * NUM_HASH_FUNC_COEF * sizeof(uint64_t));
+                      get_num_hash_func() * NUM_HASH_FUNC_COEF * sizeof(uint64_t));
     hash_table.reset(ptr_cuda_hash_table);
     hash_func_coef.reset(ptr_cuda_hash_func_coef);
     prime_cnt = prime_filter(prime_list.get(), size_hash_table >> 5);

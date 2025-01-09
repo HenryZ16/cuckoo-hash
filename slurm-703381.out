@@ -1,4 +1,0 @@
-/opt/gridview/slurm/spool/slurmd/job703381/slurm_script: line 10: ./experiments/exp1.sh: No such file or directory
-/opt/gridview/slurm/spool/slurmd/job703381/slurm_script: line 11: ./experiments/exp2.sh: No such file or directory
-/opt/gridview/slurm/spool/slurmd/job703381/slurm_script: line 12: ./experiments/exp3.sh: No such file or directory
-/opt/gridview/slurm/spool/slurmd/job703381/slurm_script: line 13: ./experiments/exp4.sh: No such file or directory

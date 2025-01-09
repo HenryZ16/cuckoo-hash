@@ -3,7 +3,7 @@
 # experiment configurations
 export CUDA_VISIBLE_DEVICES=1
 BUILD_DIR=build
-LOG_DIR="log-exp2"
+LOG_DIR="log-exp2-2080Ti"
 input_file="data"
 config_file="config.txt"
 repetition=5
@@ -36,9 +36,9 @@ for j in ${num_hash_func[@]}; do
           count=$((count + 1))
 
           if (( count == 5 )); then
-            average=$(echo "scale=2; $sum / $count" | bc)
+            average=$(echo "scale=6; $sum / $count" | bc)
             echo "Average of group: $average"
-            speed=$(echo "scale=2; $k / $average" | bc)
+            speed=$(echo "scale=6; $k / $average" | bc)
             echo "Speed of group: $speed"
             count=0
             sum=0
@@ -46,7 +46,7 @@ for j in ${num_hash_func[@]}; do
         done
 
         if (( count > 0 )); then
-          average=$(echo "scale=2; $sum / $count" | bc)
+          average=$(echo "scale=6; $sum / $count" | bc)
           echo "Average of remaining group: $average"
         fi
 
@@ -71,9 +71,9 @@ for j in ${num_hash_func[@]}; do
             count=$((count + 1))
 
             if (( count == 5 )); then
-              average=$(echo "scale=2; $sum / $count" | bc)
+              average=$(echo "scale=6; $sum / $count" | bc)
               echo "Average of group: $average"
-              speed=$(echo "scale=2; $k / $average" | bc)
+              speed=$(echo "scale=6; $k / $average" | bc)
               echo "Speed of group: $speed"
               count=0
               sum=0
@@ -81,7 +81,7 @@ for j in ${num_hash_func[@]}; do
           done
 
           if (( count > 0 )); then
-            average=$(echo "scale=2; $sum / $count" | bc)
+            average=$(echo "scale=6; $sum / $count" | bc)
             echo "Average of remaining group: $average"
           fi
         done

@@ -4,3 +4,4 @@ compile_commands.json
 data*
 log*
 config.txt
+slurm-*

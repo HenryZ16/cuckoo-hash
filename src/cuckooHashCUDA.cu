@@ -54,7 +54,7 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
 
 // implement cuda functions
 // hash
-__device__ uint32_t hash_device(size_t i, uint64_t key, uint64_t *coef,
+__device__ uint32_t hash_device(size_t i_block, uint64_t key, uint64_t *coef,
                                 uint64_t h_array_size) {
   uint64_t value_1 = 0;
 #pragma unroll
@@ -72,7 +72,7 @@ __device__ uint32_t hash_device(size_t i, uint64_t key, uint64_t *coef,
 
   uint64_t value = (value_1 ^ value_2) % PRIME;
   uint64_t pos = value % h_array_size;
-  uint32_t ret = static_cast<uint32_t>(pos + i * h_array_size);
+  uint32_t ret = static_cast<uint32_t>(pos + i_block * h_array_size);
   return ret;
 }
 
@@ -137,61 +137,49 @@ __global__ void insert_global(uint32_t *ptr_hash_table, size_t size_hash_table,
                               size_t num_hash_func, uint64_t *array_coef,
                               uint32_t max_eviction, uint32_t *array_key,
                               uint32_t num_array_key,
-                              uint32_t *exceed_max_eviction,
-                              uint32_t if_replace_key) {
+                              uint32_t *exceed_max_eviction) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
+  extern __shared__ uint64_t hash_coef[];
+  if (threadIdx.x < num_hash_func * NUM_HASH_FUNC_COEF) {
+    hash_coef[threadIdx.x] = array_coef[threadIdx.x];
+  }
 
   // insert the key in the range [i * thread_lookup_size, (i + 1) *
   // thread_lookup_size)
   uint32_t h_array_size = size_hash_table / num_hash_func;
   size_t num_threads = blockDim.x * gridDim.x;
-  size_t thread_lookup_size = num_array_key / num_threads + 1;
 
   // go over the array of keys assigned to thread `i`
-  size_t array_key_start = i * thread_lookup_size;
-  size_t array_key_end = (i + 1) * thread_lookup_size;
-  array_key_end = array_key_end > num_array_key ? num_array_key : array_key_end;
-  for (size_t k = array_key_start; k < array_key_end; ++k) {
+  for (size_t k = i; k < num_array_key; k += num_threads) {
     uint32_t hash_value;
     bool if_found = false;
+    uint32_t key = array_key[i];
     for (size_t j = 0; j < num_hash_func; ++j) {
       hash_value = hash_device(
-          j, array_key[k], &array_coef[j * NUM_HASH_FUNC_COEF], h_array_size);
-      if (ptr_hash_table[hash_value] == array_key[k]) {
-        if (if_replace_key) {
-          array_key[k] = 0;
-        }
-        if_found = true;
-        break;
-      }
+          j, key, &hash_coef[j * NUM_HASH_FUNC_COEF], h_array_size);
+      if_found |= (ptr_hash_table[hash_value] == key);
     }
     if (if_found) {
       continue;
     }
 
     size_t j = 0;
-    uint32_t key = array_key[k];
     for (; j < max_eviction; j++) {
       size_t m = j % num_hash_func;
       // calc hash value
-      hash_value = hash_device(m, key, &array_coef[m * NUM_HASH_FUNC_COEF],
+      hash_value = hash_device(m, key, &hash_coef[m * NUM_HASH_FUNC_COEF],
                                h_array_size);
       // try to insert
       // if failed, exchange the key with the existing key
       uint32_t old_value = atomicExch(&ptr_hash_table[hash_value], key);
       if (old_value == 0 || old_value == key) {
-        if (if_replace_key) {
-          array_key[k] = 0;
-        }
         break;
-      } else {
-        key = old_value;
       }
+      key = old_value;
     }
     // if exceed the max eviction, set exceed_max_eviction to true
-    if (j >= max_eviction) {
-      *exceed_max_eviction = 1;
-    }
+    *exceed_max_eviction |= (j >= max_eviction);
+    __syncthreads();
   }
 }
 
@@ -202,32 +190,34 @@ __device__ void lookup_device(uint32_t *hash_table, size_t size_hash_table,
                               uint32_t *res_pos_hash_func,
                               uint32_t *res_pos_hash_array) {
   size_t i = blockIdx.x * blockDim.x + threadIdx.x;
+  extern __shared__ uint64_t hash_coef[];
+  if (threadIdx.x < num_hash_func * NUM_HASH_FUNC_COEF) {
+    hash_coef[threadIdx.x] = array_coef[threadIdx.x];
+  }
 
   // lookup the key in the range [i * thread_lookup_size, (i + 1) *
   // thread_lookup_size)
   uint32_t h_array_size = size_hash_table / num_hash_func;
   size_t num_threads = blockDim.x * gridDim.x;
-  size_t thread_lookup_size = num_array_key / num_threads + 1;
 
   // go over the array of keys assigned to thread `i`
-  size_t array_key_start = i * thread_lookup_size;
-  size_t array_key_end = (i + 1) * thread_lookup_size;
-  array_key_end = array_key_end > num_array_key ? num_array_key : array_key_end;
-  for (size_t k = array_key_start; k < array_key_end; ++k) {
+  for (size_t k = i; k < num_array_key; k += num_threads) {
     res_pos_hash_func[k] = UINT_MAX;
     res_pos_hash_array[k] = UINT_MAX;
-    if (array_key[k] == 0) {
+    uint32_t key = array_key[k];
+    if (key == 0) {
       continue;
     }
     // for each array corresponding to a hash function
     for (size_t j = 0; j < num_hash_func; ++j) {
       uint32_t pos = hash_device(
-          j, array_key[k], &array_coef[j * NUM_HASH_FUNC_COEF], h_array_size);
-      if (hash_table[pos] == array_key[k]) {
+          j, key, &hash_coef[j * NUM_HASH_FUNC_COEF], h_array_size);
+      if (hash_table[pos] == key) {
         res_pos_hash_func[k] = i;
         res_pos_hash_array[k] = pos;
       }
     }
+    __syncthreads();
   }
 }
 
@@ -250,8 +240,9 @@ void CuckooHashCUDA::rehash() {
   std::cout << "Rehashing " << table_element_cnt << " elements" << std::endl;
 
   // insert
+  size_t total_num_coef = get_num_hash_func() * NUM_HASH_FUNC_COEF;
   size_t num_threads = block_size;
-  size_t num_blocks = grid_size;
+  size_t num_blocks = (table_element_cnt + block_size - 1) / block_size;
   uint32_t *ptr_cuda_exceed_max_eviction = nullptr;
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(uint32_t));
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
@@ -264,10 +255,10 @@ void CuckooHashCUDA::rehash() {
     cudaMemset(hash_table.get(), 0, s_hash_table * sizeof(uint32_t));
     *exceed_max_eviction = 0;
 
-    insert_global<<<num_blocks, num_threads>>>(
+    insert_global<<<num_blocks, num_threads, total_num_coef>>>(
         hash_table.get(), s_hash_table, get_num_hash_func(),
         hash_func_coef.get(), get_max_eviction(), new_hash_table.get(),
-        table_element_cnt, exceed_max_eviction.get(), 0);
+        table_element_cnt, exceed_max_eviction.get());
     cudaDeviceSynchronize();
 
     cudaError_t err = cudaGetLastError();
@@ -288,10 +279,6 @@ void CuckooHashCUDA::lookup(const Instruction &inst,
     return;
   }
 
-#ifdef BENCHMARK
-  uint64_t t_start = std::clock();
-#endif
-
   size_t num_array_key = inst.second.size();
   uint32_t *ptr_cuda_array_key = nullptr;
   cudaMallocManaged(&ptr_cuda_array_key, num_array_key * sizeof(uint32_t));
@@ -303,6 +290,7 @@ void CuckooHashCUDA::lookup(const Instruction &inst,
     array_key[i] = inst.second[i];
   }
 
+  size_t total_num_coef = get_num_hash_func() * NUM_HASH_FUNC_COEF;
   size_t num_threads = block_size;
   size_t num_blocks = grid_size;
   uint32_t *ptr_cuda_res_pos_hash_func = nullptr;
@@ -318,13 +306,23 @@ void CuckooHashCUDA::lookup(const Instruction &inst,
   auto res_pos_hash_array = std::unique_ptr<uint32_t[], cudaMemDeconstructor_t>(
       ptr_cuda_res_pos_hash_array, &cudaMemDeconstructor);
 
-  lookup_global<<<num_blocks, num_threads>>>(
+#ifdef BENCHMARK
+  uint64_t t_start = std::clock();
+#endif
+
+  // prefetch async
+  cudaStream_t stream;
+  cudaStreamCreate(&stream);
+  cudaMemPrefetchAsync(array_key.get(), num_array_key, 0, stream);
+
+  lookup_global<<<num_blocks, num_threads, total_num_coef>>>(
       hash_table.get(), get_size_hash_table(), get_num_hash_func(),
       hash_func_coef.get(), array_key.get(), num_array_key,
       res_pos_hash_func.get(), res_pos_hash_array.get());
   cudaDeviceSynchronize();
 
   results.resize(num_array_key);
+  cudaStreamSynchronize(stream);
 #pragma omp parallel for
   for (size_t i = 0; i < num_array_key; ++i) {
     results[i] = std::make_pair(res_pos_hash_func[i], res_pos_hash_array[i]);
@@ -355,10 +353,6 @@ void CuckooHashCUDA::insert(const Instruction &inst) {
     return;
   }
 
-#ifdef BENCHMARK
-  uint64_t t_start = std::clock();
-#endif
-
   size_t max_eviction = 12 * std::log2(inst.second.size());
   max_eviction = max_eviction < 4 ? 4 : max_eviction;
   set_max_eviction(max_eviction);
@@ -375,19 +369,29 @@ void CuckooHashCUDA::insert(const Instruction &inst) {
     array_key[i] = inst.second[i];
   }
 
+  size_t total_num_coef = get_num_hash_func() * NUM_HASH_FUNC_COEF;
   size_t num_threads = block_size;
-  size_t num_blocks = grid_size;
+  size_t num_blocks = (num_array_key + block_size - 1) / block_size;
   uint32_t *ptr_cuda_exceed_max_eviction = nullptr;
   cudaMallocManaged(&ptr_cuda_exceed_max_eviction, sizeof(uint32_t));
   auto exceed_max_eviction = std::unique_ptr<uint32_t, cudaMemDeconstructor_t>(
       ptr_cuda_exceed_max_eviction, &cudaMemDeconstructor);
 
+#ifdef BENCHMARK
+  uint64_t t_start = std::clock();
+#endif
+
+  // prefetch async
+  cudaStream_t stream;
+  cudaStreamCreate(&stream);
+  cudaMemPrefetchAsync(array_key.get(), num_array_key, 0, stream);
+
   while (1) {
     *exceed_max_eviction = 0;
-    insert_global<<<num_blocks, num_threads>>>(
+    insert_global<<<num_blocks, num_threads, total_num_coef, stream>>>(
         hash_table.get(), get_size_hash_table(), get_num_hash_func(),
         hash_func_coef.get(), max_eviction, array_key.get(), num_array_key,
-        exceed_max_eviction.get(), 1);
+        exceed_max_eviction.get());
     cudaDeviceSynchronize();
     cudaError_t err = cudaGetLastError();
     if (err != cudaSuccess) {
@@ -395,21 +399,13 @@ void CuckooHashCUDA::insert(const Instruction &inst) {
     }
 
     if (*exceed_max_eviction) {
-      int cnt = 0;
-      for (size_t i = 0; i < num_array_key; ++i) {
-        if (array_key[i] != 0) {
-          array_key[cnt] = array_key[i];
-          cnt++;
-        }
-      }
-      num_array_key = cnt;
-      std::cout << cnt << " keys left to insert\n";
-
       rehash();
     } else {
       break;
     }
   }
+
+  cudaStreamSynchronize(stream);
 
 #ifdef BENCHMARK
   uint64_t t_end = std::clock();
